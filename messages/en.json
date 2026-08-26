@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "tituloDefault": "LABHC 2026 — Latin American Bowhunter Championship",
+    "tituloTemplate": "%s · LABHC 2026",
+    "descripcion": "Latin American Bowhunter Championship 2026: 3D archery under IFAA rules. Panda Troupe, Olivera, Buenos Aires, Argentina. December 5th to 8th, 2026."
+  },
+  "nav": {
+    "inicio": "Home",
+    "acerca": "About",
+    "competicion": "Competition",
+    "resultados": "Results",
+    "registrados": "Registered",
+    "alojamiento": "Accommodations",
+    "inscripcion": "Register",
+    "abrirMenu": "Open menu",
+    "cerrarMenu": "Close menu"
+  },
+  "footer": {
+    "descripcion": "Latin American 3D archery championship under IFAA rules.",
+    "columnaSitio": "Site",
+    "columnaContacto": "Contact",
+    "emailPlaceholder": "Contact email (TBD)",
+    "redesPlaceholder": "Social media (TBD)",
+    "columnaSede": "Venue and dates",
+    "sede": "Panda Troupe, Olivera, Buenos Aires, Argentina",
+    "fechas": "December 5th to 8th, 2026",
+    "organizadores": "Organized by: Flechar + Liga 3D Metropolitana",
+    "avalan": "Endorsed by: IFAA, TAFISA, Zona Vital",
+    "copyright": "LABHC. All rights reserved."
+  },
+  "paginas": {
+    "inicio": { "titulo": "Latin American Bowhunter Championship 2026" },
+    "acerca": { "titulo": "About" },
+    "competicion": { "titulo": "Competition" },
+    "resultados": { "titulo": "Results" },
+    "registrados": { "titulo": "Registered" },
+    "alojamiento": { "titulo": "Accommodations" },
+    "inscripcion": { "titulo": "Registration" }
+  }
+}
