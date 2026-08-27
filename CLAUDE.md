@@ -251,7 +251,7 @@ Trabajar de a una etapa. No empezar la siguiente sin que la anterior corra.
 
 - [x] **Etapa 1 — Base:** Next.js 14 + TS + Tailwind + next-intl, layout con
       navbar y footer, las 7 rutas creadas y vacías, paleta y tipografía.
-- [ ] **Etapa 2 — Home:** banner/hero, cuenta regresiva, mensaje de bienvenida,
+- [x] **Etapa 2 — Home:** banner/hero, cuenta regresiva, mensaje de bienvenida,
       grilla de partners, footer completo.
 - [ ] **Etapa 3 — Contenido estático:** Acerca de, Competición (programa, mapa,
       precios, formas de pago), Alojamiento.

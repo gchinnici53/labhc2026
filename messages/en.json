@@ -36,5 +36,29 @@
     "registrados": { "titulo": "Registered" },
     "alojamiento": { "titulo": "Accommodations" },
     "inscripcion": { "titulo": "Registration" }
+  },
+  "home": {
+    "hero": {
+      "fechas": "December 5th to 8th, 2026",
+      "sede": "Panda Troupe, Olivera, Buenos Aires, Argentina",
+      "cta1": "CTA 1 (TBD)",
+      "cta2": "CTA 2 (TBD)",
+      "imagenPlaceholder": "Banner image (TBD)"
+    },
+    "cuentaRegresiva": {
+      "titulo": "Time left until the tournament",
+      "dias": "Days",
+      "horas": "Hours",
+      "minutos": "Minutes",
+      "segundos": "Seconds",
+      "comenzo": "The tournament has started"
+    },
+    "bienvenida": {
+      "titulo": "Welcome",
+      "texto": "Welcome text (TBD)"
+    },
+    "partners": {
+      "titulo": "Partners and sponsors"
+    }
   }
 }
