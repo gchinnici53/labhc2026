@@ -29,8 +29,8 @@ function calcularTiempoRestante(): TiempoRestante {
 
 function UnidadTiempo({ valor, etiqueta }: { valor: number; etiqueta: string }) {
   return (
-    <div className="flex flex-col items-center rounded-lg bg-primario px-4 py-6 text-fondo sm:px-6">
-      <span className="font-display text-4xl sm:text-5xl">
+    <div className="flex flex-col items-center rounded-lg bg-primario px-2 py-4 text-fondo sm:px-6 sm:py-6">
+      <span className="font-display text-3xl sm:text-5xl">
         {String(valor).padStart(2, "0")}
       </span>
       <span className="mt-1 text-xs uppercase tracking-wide text-fondo/80">
@@ -64,7 +64,7 @@ export function CuentaRegresiva() {
             {t("comenzo")}
           </p>
         ) : (
-          <div className="grid grid-cols-4 gap-3 sm:gap-6">
+          <div className="grid grid-cols-4 gap-2 sm:gap-6">
             <UnidadTiempo valor={tiempo?.dias ?? 0} etiqueta={t("dias")} />
             <UnidadTiempo valor={tiempo?.horas ?? 0} etiqueta={t("horas")} />
             <UnidadTiempo valor={tiempo?.minutos ?? 0} etiqueta={t("minutos")} />

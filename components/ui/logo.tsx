@@ -11,7 +11,7 @@ export function Logo({ className = "h-32 w-32" }: { className?: string }) {
         src="/logos/labhc2026.png"
         alt="LABHC 2026"
         fill
-        sizes="128px"
+        sizes="(min-width: 1024px) 128px, 56px"
         className="object-cover"
         priority
       />
