@@ -22,7 +22,7 @@ export function Footer() {
     <footer className="border-t border-primario-oscuro/10 bg-primario text-fondo">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-3">
-          <Logo className="h-8 w-auto text-fondo" />
+          <Logo className="h-10 w-10" />
           <p className="text-sm text-fondo/80">{t("descripcion")}</p>
         </div>
 

@@ -1,11 +1,12 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 // Array temporal: en la Etapa 5 esto pasa a la tabla Sponsor (ordenada por
 // nivel y orden).
 const PARTNERS = [
-  { nombre: "IFAA" },
-  { nombre: "TAFISA" },
-  { nombre: "Zona Vital" },
+  { nombre: "IFAA", archivo: "ifaa.png" },
+  { nombre: "TAFISA", archivo: "tafisa.png" },
+  { nombre: "Zona Vital", archivo: "zonavital.png" },
 ];
 
 export function Partners() {
@@ -20,11 +21,15 @@ export function Partners() {
         {PARTNERS.map((partner) => (
           <div
             key={partner.nombre}
-            className="flex h-20 w-40 items-center justify-center rounded-md border border-primario/10 bg-white grayscale transition hover:grayscale-0"
+            className="flex h-28 w-40 items-center justify-center rounded-md border border-primario/10 bg-white p-4 grayscale transition hover:grayscale-0"
           >
-            <span className="font-display text-lg uppercase tracking-wide text-primario">
-              {partner.nombre}
-            </span>
+            <Image
+              src={`/logos/${partner.archivo}`}
+              alt={partner.nombre}
+              width={200}
+              height={200}
+              className="h-full w-full object-contain"
+            />
           </div>
         ))}
       </div>

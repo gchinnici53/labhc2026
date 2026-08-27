@@ -1,22 +1,20 @@
-// Placeholder del logo: reemplazar por el SVG oficial cuando esté disponible
-// (ver docs/04-PENDIENTES.md).
-export function Logo({ className }: { className?: string }) {
+import Image from "next/image";
+
+// El archivo tiene fondo gris claro (foto de estudio) alrededor de la
+// medalla circular: overflow-hidden + rounded-full la recorta prolijo.
+export function Logo({ className = "h-10 w-10" }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 220 40"
-      role="img"
-      aria-label="LABHC 2026"
-      className={className}
+    <span
+      className={`relative inline-block shrink-0 overflow-hidden rounded-full ${className}`}
     >
-      <text
-        x="0"
-        y="28"
-        fontFamily="var(--font-titulos)"
-        fontSize="28"
-        fill="currentColor"
-      >
-        LABHC <tspan fill="#E8622C">2026</tspan>
-      </text>
-    </svg>
+      <Image
+        src="/logos/labhc2026.png"
+        alt="LABHC 2026"
+        fill
+        sizes="40px"
+        className="object-cover"
+        priority
+      />
+    </span>
   );
 }
