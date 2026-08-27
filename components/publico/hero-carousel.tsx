@@ -9,10 +9,10 @@ const CANTIDAD_SLIDES = 4;
 const INTERVALO_MS = 6000;
 
 const DEGRADES = [
-  "linear-gradient(135deg, #1C2E20 0%, #3F6349 60%, #E8622C33 100%)",
-  "linear-gradient(135deg, #2B4632 0%, #3F6349 55%, #C94E1D33 100%)",
-  "linear-gradient(135deg, #1C2E20 0%, #2B4632 50%, #E8622C33 100%)",
-  "linear-gradient(135deg, #3F6349 0%, #1C2E20 60%, #C94E1D33 100%)",
+  "linear-gradient(135deg, #232A38 0%, #4E5E7D 60%, #E3313133 100%)",
+  "linear-gradient(135deg, #364156 0%, #4E5E7D 55%, #C12A2A33 100%)",
+  "linear-gradient(135deg, #232A38 0%, #364156 50%, #E3313133 100%)",
+  "linear-gradient(135deg, #4E5E7D 0%, #232A38 60%, #C12A2A33 100%)",
 ];
 
 export function HeroCarousel() {

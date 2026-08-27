@@ -1,8 +1,6 @@
 import type { Config } from "tailwindcss";
 
-// Paleta "Verde Caza y Blaze": verde bosque + naranja blaze (color de
-// seguridad asociado al bowhunting), pensada para un torneo de tiro con
-// arco 3D al aire libre.
+// Paleta ajustada a pedido: azul + rojo en vez del verde/naranja original.
 const config: Config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,13 +10,13 @@ const config: Config = {
     extend: {
       colors: {
         primario: {
-          DEFAULT: "#2B4632",
-          claro: "#3F6349",
-          oscuro: "#1C2E20",
+          DEFAULT: "#364156",
+          claro: "#4E5E7D",
+          oscuro: "#232A38",
         },
         acento: {
-          DEFAULT: "#E8622C",
-          oscuro: "#C94E1D",
+          DEFAULT: "#E33131",
+          oscuro: "#C12A2A",
         },
         fondo: "#FAFAF7",
         texto: "#1A1A18",

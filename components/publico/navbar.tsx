@@ -26,7 +26,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-primario-oscuro/10 bg-fondo/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link href="/" className="shrink-0">
-          <Logo className="h-10 w-10" />
+          <Logo className="h-32 w-32" />
         </Link>
 
         <nav className="hidden items-center gap-6 font-sans text-sm font-semibold uppercase tracking-wide lg:flex">
