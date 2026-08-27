@@ -60,5 +60,113 @@
     "partners": {
       "titulo": "Partners y auspiciantes"
     }
+  },
+  "acerca": {
+    "bloque1": {
+      "titulo": "La unión de Flechar con la Liga 3D Metropolitana",
+      "texto": "Texto (a definir)"
+    },
+    "bloque2": {
+      "titulo": "Qué es la IFAA",
+      "texto": "Reseña resumida (a definir)"
+    },
+    "bloque3": {
+      "titulo": "Organizadores",
+      "texto": "Personas a cargo y sus roles (a definir)"
+    }
+  },
+  "competicion": {
+    "datos": {
+      "titulo": "Datos del torneo",
+      "nombre": "Nombre",
+      "nombreValor": "Nombre oficial completo (a definir)",
+      "fecha": "Fecha",
+      "fechaValor": "5 al 8 de diciembre de 2026",
+      "lugar": "Lugar",
+      "organizacion": "Organización",
+      "organizacionValor": "Personas a cargo y roles (a definir)",
+      "reglamento": "Reglamento",
+      "reglamentoValor": "IFAA — 3D"
+    },
+    "programa": {
+      "titulo": "Programa",
+      "dias": [
+        {
+          "titulo": "Día 1 — sábado 5/12",
+          "eventos": [
+            { "hora": "08:00 – 17:00", "actividad": "Recepción e inscripción" },
+            { "hora": "10:00 – 14:00", "actividad": "Apertura del campo de práctica libre" },
+            { "hora": "17:30 – 18:00", "actividad": "Apertura y desfile (lugar a definir)" },
+            { "hora": "18:00 – 19:00", "actividad": "Brindis y cierre del día 1" }
+          ]
+        },
+        {
+          "titulo": "Día 2 — domingo 6/12",
+          "eventos": [
+            { "hora": "07:30 – 08:00", "actividad": "Reunión de tiradores" },
+            { "hora": "08:00 – 09:00", "actividad": "Campo de práctica" },
+            { "hora": "09:00", "actividad": "Inicio de la 1ª prueba — Animal Round 3D" },
+            { "hora": "16:00", "actividad": "Entrega de tarjetas y cierre del día 2" }
+          ]
+        },
+        {
+          "titulo": "Día 3 — lunes 7/12",
+          "eventos": [
+            { "hora": "07:30 – 08:00", "actividad": "Reunión de tiradores" },
+            { "hora": "08:00 – 09:00", "actividad": "Campo de práctica" },
+            { "hora": "09:00", "actividad": "Inicio de la 2ª prueba — Standard Round 3D" },
+            { "hora": "16:00", "actividad": "Entrega de tarjetas y cierre del día 3" }
+          ]
+        },
+        {
+          "titulo": "Día 4 — martes 8/12",
+          "eventos": [
+            { "hora": "07:30 – 08:00", "actividad": "Reunión de tiradores" },
+            { "hora": "08:00 – 09:00", "actividad": "Campo de práctica" },
+            { "hora": "09:00", "actividad": "Inicio de la 3ª prueba — Hunting Round 3D" },
+            { "hora": "13:00", "actividad": "Entrega de tarjetas" },
+            { "hora": "13:00 – 16:00", "actividad": "Almuerzo y show" },
+            { "hora": "16:00", "actividad": "Entrega de premios" },
+            { "hora": "17:30", "actividad": "Cierre del torneo" }
+          ]
+        }
+      ]
+    },
+    "ubicacion": {
+      "titulo": "Ubicación",
+      "comoLlegar": "Cómo llegar"
+    },
+    "precios": {
+      "titulo": "Precios",
+      "inscripcion": "Inscripción de tirador",
+      "banquete": "Banquete"
+    },
+    "formasDePago": {
+      "titulo": "Formas de pago",
+      "texto": "A definir. Va a haber opciones para pagos desde el exterior (transferencia internacional, Wise, PayPal) y pagos locales."
+    }
+  },
+  "alojamiento": {
+    "avisoEjemplo": "Datos de ejemplo — se van a reemplazar por alojamientos reales.",
+    "imagenPlaceholder": "Imagen (a definir)",
+    "precioPlaceholder": "Precio a definir",
+    "distanciaPlaceholder": "Distancia a definir",
+    "opciones": [
+      {
+        "nombre": "Alojamiento de ejemplo 1",
+        "descripcion": "Descripción de ejemplo (a completar con datos reales)."
+      },
+      {
+        "nombre": "Alojamiento de ejemplo 2",
+        "descripcion": "Descripción de ejemplo (a completar con datos reales)."
+      }
+    ],
+    "transfer": {
+      "titulo": "Transfer al campo de tiro",
+      "texto": "Horarios y costo del transfer (a definir)."
+    }
+  },
+  "resultados": {
+    "enConstruccion": "Esta sección va a estar disponible más cerca del torneo."
   }
 }

@@ -60,5 +60,113 @@
     "partners": {
       "titulo": "Partners and sponsors"
     }
+  },
+  "acerca": {
+    "bloque1": {
+      "titulo": "The union of Flechar and Liga 3D Metropolitana",
+      "texto": "Text (TBD)"
+    },
+    "bloque2": {
+      "titulo": "What is the IFAA",
+      "texto": "Summary (TBD)"
+    },
+    "bloque3": {
+      "titulo": "Organizers",
+      "texto": "People in charge and their roles (TBD)"
+    }
+  },
+  "competicion": {
+    "datos": {
+      "titulo": "Tournament details",
+      "nombre": "Name",
+      "nombreValor": "Full official name (TBD)",
+      "fecha": "Date",
+      "fechaValor": "December 5th to 8th, 2026",
+      "lugar": "Venue",
+      "organizacion": "Organization",
+      "organizacionValor": "People in charge and roles (TBD)",
+      "reglamento": "Rules",
+      "reglamentoValor": "IFAA — 3D"
+    },
+    "programa": {
+      "titulo": "Schedule",
+      "dias": [
+        {
+          "titulo": "Day 1 — Saturday 12/5",
+          "eventos": [
+            { "hora": "08:00 – 17:00", "actividad": "Check-in and registration" },
+            { "hora": "10:00 – 14:00", "actividad": "Practice range open" },
+            { "hora": "17:30 – 18:00", "actividad": "Opening ceremony and parade (venue TBD)" },
+            { "hora": "18:00 – 19:00", "actividad": "Toast and end of day 1" }
+          ]
+        },
+        {
+          "titulo": "Day 2 — Sunday 12/6",
+          "eventos": [
+            { "hora": "07:30 – 08:00", "actividad": "Archers' meeting" },
+            { "hora": "08:00 – 09:00", "actividad": "Practice range" },
+            { "hora": "09:00", "actividad": "Start of round 1 — Animal Round 3D" },
+            { "hora": "16:00", "actividad": "Scorecard hand-in and end of day 2" }
+          ]
+        },
+        {
+          "titulo": "Day 3 — Monday 12/7",
+          "eventos": [
+            { "hora": "07:30 – 08:00", "actividad": "Archers' meeting" },
+            { "hora": "08:00 – 09:00", "actividad": "Practice range" },
+            { "hora": "09:00", "actividad": "Start of round 2 — Standard Round 3D" },
+            { "hora": "16:00", "actividad": "Scorecard hand-in and end of day 3" }
+          ]
+        },
+        {
+          "titulo": "Day 4 — Tuesday 12/8",
+          "eventos": [
+            { "hora": "07:30 – 08:00", "actividad": "Archers' meeting" },
+            { "hora": "08:00 – 09:00", "actividad": "Practice range" },
+            { "hora": "09:00", "actividad": "Start of round 3 — Hunting Round 3D" },
+            { "hora": "13:00", "actividad": "Scorecard hand-in" },
+            { "hora": "13:00 – 16:00", "actividad": "Lunch and show" },
+            { "hora": "16:00", "actividad": "Awards ceremony" },
+            { "hora": "17:30", "actividad": "Closing of the tournament" }
+          ]
+        }
+      ]
+    },
+    "ubicacion": {
+      "titulo": "Location",
+      "comoLlegar": "Get directions"
+    },
+    "precios": {
+      "titulo": "Prices",
+      "inscripcion": "Archer registration",
+      "banquete": "Banquet"
+    },
+    "formasDePago": {
+      "titulo": "Payment methods",
+      "texto": "TBD. There will be options for international payments (wire transfer, Wise, PayPal) and local payments."
+    }
+  },
+  "alojamiento": {
+    "avisoEjemplo": "Sample data — will be replaced with real accommodations.",
+    "imagenPlaceholder": "Image (TBD)",
+    "precioPlaceholder": "Price TBD",
+    "distanciaPlaceholder": "Distance TBD",
+    "opciones": [
+      {
+        "nombre": "Sample accommodation 1",
+        "descripcion": "Sample description (to be completed with real data)."
+      },
+      {
+        "nombre": "Sample accommodation 2",
+        "descripcion": "Sample description (to be completed with real data)."
+      }
+    ],
+    "transfer": {
+      "titulo": "Transfer to the range",
+      "texto": "Transfer schedule and cost (TBD)."
+    }
+  },
+  "resultados": {
+    "enConstruccion": "This section will be available closer to the tournament."
   }
 }

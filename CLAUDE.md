@@ -253,7 +253,7 @@ Trabajar de a una etapa. No empezar la siguiente sin que la anterior corra.
       navbar y footer, las 7 rutas creadas y vacías, paleta y tipografía.
 - [x] **Etapa 2 — Home:** banner/hero, cuenta regresiva, mensaje de bienvenida,
       grilla de partners, footer completo.
-- [ ] **Etapa 3 — Contenido estático:** Acerca de, Competición (programa, mapa,
+- [x] **Etapa 3 — Contenido estático:** Acerca de, Competición (programa, mapa,
       precios, formas de pago), Alojamiento.
 - [ ] **Etapa 4 — Base de datos y auth:** Prisma + PostgreSQL, migraciones,
       seed, Auth.js con los 3 roles, middleware que protege `/admin`.
