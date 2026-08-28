@@ -69,7 +69,13 @@
   "acerca": {
     "bloque1": {
       "titulo": "The union of Flechar and Liga 3D Metropolitana",
-      "texto": "Text (TBD)"
+      "parrafos": [
+        "Liga 3D Metropolitana and Club Flechar were born from the same place: a passion for 3D archery and the drive to help it grow. Over four consecutive years, L3DM established itself by organizing the country's best 3D tournaments, bringing together a community of hundreds of archers of every level, awarding millions of pesos in prizes, and setting up Argentina's best 3D targets on the range.",
+        "Flechar, an archery school with more than two decades of experience, brings the pillar that any top-level competition needs: technical knowledge. Its IFAA international instructor certification and its experience training archers add the sporting rigor, teaching, and command of the rulebook that make the difference.",
+        "Joining these two forces wasn't a coincidence — it was the natural conclusion of two institutions that share the same vision: that Argentine 3D archery deserves to stand alongside the best in the world.",
+        "That union gave rise to the most ambitious challenge the community has ever taken on: organizing, for the first time in Argentina, the Latin American Bowhunter Championship. This isn't just a tournament — it's the most important 3D event in Argentine history: a chance to put the country on the continental map of the discipline, and to show, both at home and abroad, everything we're capable of building when we work together.",
+        "It's a big bet, with little time and a lot to do, but taken on with the conviction that we're writing a page Argentine 3D archery will remember."
+      ]
     },
     "bloque2": {
       "titulo": "What is the IFAA",

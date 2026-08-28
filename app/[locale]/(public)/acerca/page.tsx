@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 export default function PaginaAcerca() {
   const tPagina = useTranslations("paginas.acerca");
   const t = useTranslations("acerca");
+  const parrafosBloque1 = t.raw("bloque1.parrafos") as string[];
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-16">
@@ -11,16 +12,18 @@ export default function PaginaAcerca() {
         {tPagina("titulo")}
       </h1>
 
-      <section className="mt-16 grid items-center gap-8 sm:grid-cols-2">
-        <div className="flex items-center justify-center gap-4 rounded-lg border border-primario/10 bg-white p-8">
-          <Image src="/logos/flechar.png" alt="Flechar" width={120} height={157} className="h-32 w-auto object-contain" />
-          <Image src="/logos/liga3d.png" alt="Liga 3D Metropolitana" width={140} height={140} className="h-32 w-auto object-contain" />
+      <section className="mt-16">
+        <div className="flex flex-wrap items-center justify-center gap-6 rounded-lg border border-primario/10 bg-white p-6">
+          <Image src="/logos/flechar.png" alt="Flechar" width={120} height={157} className="h-20 w-auto object-contain" />
+          <Image src="/logos/liga3d.png" alt="Liga 3D Metropolitana" width={140} height={140} className="h-20 w-auto object-contain" />
         </div>
-        <div>
-          <h2 className="font-display text-2xl uppercase tracking-wide text-primario">
-            {t("bloque1.titulo")}
-          </h2>
-          <p className="mt-3 italic text-texto/70">{t("bloque1.texto")}</p>
+        <h2 className="mt-8 text-center font-display text-2xl uppercase tracking-wide text-primario">
+          {t("bloque1.titulo")}
+        </h2>
+        <div className="mx-auto mt-4 flex max-w-2xl flex-col gap-4 text-texto/80">
+          {parrafosBloque1.map((parrafo) => (
+            <p key={parrafo.slice(0, 40)}>{parrafo}</p>
+          ))}
         </div>
       </section>
 
