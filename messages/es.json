@@ -79,7 +79,11 @@
     },
     "bloque2": {
       "titulo": "Qué es la IFAA",
-      "texto": "La IFAA organiza los campeonatos mundiales y sanciona los campeonatos anuales de sus seis regiones, una de las cuales es Latinoamérica. El Campeonato Latinoamericano de Bowhunter es, precisamente, el certamen regional de nuestra parte del mundo: contar con el aval de la IFAA es lo que le da a este torneo su carácter oficial y latinoamericano."
+      "parrafos": [
+        "La IFAA (International Field Archery Association) es la asociación internacional que nuclea el tiro con arco de campo y bowhunter. Fundada en 1970 por arqueros de Estados Unidos, Suecia, Inglaterra, Escocia, Gales y Canadá, hoy reúne a más de 50.000 arqueros en 45 países de todos los continentes. Integra además TAFISA (The Association for International Sport for All), la entidad mundial de \"deporte para todos\" reconocida por el Comité Olímpico Internacional.",
+        "A diferencia de World Archery —la federación olímpica que la mayoría de los arqueros argentinos conoce—, la IFAA nació del tiro de campo y el bowhunter, en pleno contacto con la naturaleza. Su espíritu es distinto: recorridos en terreno natural, distancias que muchas veces hay que estimar, una gran variedad de estilos de arco y un sistema de clases y divisiones que permite competir tanto a amateurs como a profesionales, cualquiera sea su nivel. Sus modalidades van desde el field —con distancias marcadas y dianas de papel— hasta el bowhunter (3D) —a siluetas de animales y distancias desconocidas—, además del tiro en sala.",
+        "La IFAA organiza los campeonatos mundiales y sanciona los campeonatos anuales de sus seis regiones, una de las cuales es Latinoamérica. El Campeonato Latinoamericano de Bowhunter es, precisamente, el certamen regional de nuestra parte del mundo: contar con el aval de la IFAA es lo que le da a este torneo su carácter oficial y latinoamericano."
+      ]
     },
     "bloque3": {
       "titulo": "Organizadores",

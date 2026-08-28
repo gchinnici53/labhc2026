@@ -5,6 +5,7 @@ export default function PaginaAcerca() {
   const tPagina = useTranslations("paginas.acerca");
   const t = useTranslations("acerca");
   const parrafosBloque1 = t.raw("bloque1.parrafos") as string[];
+  const parrafosBloque2 = t.raw("bloque2.parrafos") as string[];
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-16">
@@ -27,15 +28,17 @@ export default function PaginaAcerca() {
         </div>
       </section>
 
-      <section className="mt-16 grid items-center gap-8 sm:grid-cols-2">
-        <div className="order-last sm:order-first">
-          <h2 className="font-display text-2xl uppercase tracking-wide text-primario">
-            {t("bloque2.titulo")}
-          </h2>
-          <p className="mt-3 text-texto/80">{t("bloque2.texto")}</p>
+      <section className="mt-16">
+        <div className="flex items-center justify-center rounded-lg border border-primario/10 bg-white p-6">
+          <Image src="/logos/ifaa.png" alt="IFAA" width={140} height={222} className="h-20 w-auto object-contain" />
         </div>
-        <div className="flex items-center justify-center rounded-lg border border-primario/10 bg-white p-8">
-          <Image src="/logos/ifaa.png" alt="IFAA" width={140} height={222} className="h-32 w-auto object-contain" />
+        <h2 className="mt-8 text-center font-display text-2xl uppercase tracking-wide text-primario">
+          {t("bloque2.titulo")}
+        </h2>
+        <div className="mx-auto mt-4 flex max-w-2xl flex-col gap-4 text-texto/80">
+          {parrafosBloque2.map((parrafo) => (
+            <p key={parrafo.slice(0, 40)}>{parrafo}</p>
+          ))}
         </div>
       </section>
 

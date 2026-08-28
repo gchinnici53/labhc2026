@@ -79,7 +79,11 @@
     },
     "bloque2": {
       "titulo": "What is the IFAA",
-      "texto": "The IFAA organizes the world championships and sanctions the annual championships of its six regions, one of which is Latin America. The Latin American Bowhunter Championship is precisely that: our region's championship — having the IFAA's endorsement is what gives this tournament its official, Latin American standing."
+      "parrafos": [
+        "The IFAA (International Field Archery Association) is the international association that brings together field and bowhunter archery. Founded in 1970 by archers from the United States, Sweden, England, Scotland, Wales, and Canada, it now brings together more than 50,000 archers in 45 countries across every continent. It is also a member of TAFISA (The Association for International Sport for All), the world body for \"sport for all\" recognized by the International Olympic Committee.",
+        "Unlike World Archery — the Olympic federation most Argentine archers know — the IFAA was born out of field and bowhunter archery, in close contact with nature. Its spirit is different: courses set on natural terrain, distances that often have to be judged by eye, a wide variety of bow styles, and a system of classes and divisions that lets both amateurs and professionals compete, whatever their level. Its formats range from field — with marked distances and paper targets — to bowhunter (3D) — animal silhouettes at unknown distances — plus indoor shooting.",
+        "The IFAA organizes the world championships and sanctions the annual championships of its six regions, one of which is Latin America. The Latin American Bowhunter Championship is precisely that: our region's championship — having the IFAA's endorsement is what gives this tournament its official, Latin American standing."
+      ]
     },
     "bloque3": {
       "titulo": "Organizers",
