@@ -1,11 +1,9 @@
 import { useTranslations } from "next-intl";
 import { CuentaRegresiva } from "@/components/publico/cuenta-regresiva";
-import { Boton } from "@/components/ui/boton";
 
 export default function PaginaResultados() {
   const tPagina = useTranslations("paginas.resultados");
   const t = useTranslations("resultados");
-  const tNav = useTranslations("nav");
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 text-center">
@@ -15,8 +13,6 @@ export default function PaginaResultados() {
       <p className="mt-4 text-texto/70">{t("enConstruccion")}</p>
 
       <CuentaRegresiva />
-
-      <Boton href="/inscripcion">{tNav("inscripcion")}</Boton>
     </div>
   );
 }

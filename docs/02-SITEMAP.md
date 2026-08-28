@@ -7,11 +7,20 @@ Sitio bilingüe. Toda ruta existe en `/es/...` y `/en/...`; `/` redirige a `/es`
 | 1 | `/es` | `/en` | Home |
 | 2 | `/es/acerca` | `/en/about` | Estático |
 | 3 | `/es/competicion` | `/en/competition` | Estático |
-| 4 | `/es/resultados` | `/en/results` | En construcción → backend |
+| 4 | `/es/reglamento` | `/en/rules` | Estático — reemplaza a "Resultados" en el nav fijo |
 | 5 | `/es/registrados` | `/en/registered` | Dinámico → backend |
 | 6 | `/es/alojamiento` | `/en/accommodations` | Dinámico → backend |
 | 7 | `/es/inscripcion` | `/en/registration` | Formulario → backend |
+| 8 | `/es/resultados` | `/en/results` | En construcción → backend. **Ya no está en el nav fijo** (ver nota abajo) |
 | — | `/admin/*` | — | Panel privado, sin i18n |
+
+> **Cambio de navegación (2026-08-28):** "Resultados" deja de ser un link permanente
+> del navbar/footer. En su lugar va "Reglamento" (texto a definir). La página
+> `/resultados` sigue existiendo, pero pasa a ser el destino del botón que hoy
+> dice "Inscribirme": cuando se cierre la inscripción (`inscripcion_abierta =
+> false` en `Configuracion`, Etapa 4+), ese botón del navbar se reemplaza
+> dinámicamente por "Resultados" apuntando a esta ruta. Esa lógica dinámica
+> todavía no está implementada — depende del panel admin.
 
 ---
 
@@ -20,13 +29,15 @@ Sitio bilingüe. Toda ruta existe en `/es/...` y `/en/...`; `/` redirige a `/es`
 ### Navbar (sticky)
 
 ```
-[LOGO LABHC]   Inicio  Acerca de  Competición  Resultados  Registrados  Alojamiento   [ES|EN]  [INSCRIBIRME]
+[LOGO LABHC]   Inicio  Acerca de  Competición  Reglamento  Registrados  Alojamiento   [ES|EN]  [INSCRIBIRME → RESULTADOS]
 ```
 
 - Logo a la izquierda, siempre enlaza a la home.
 - Selector de idioma que conserva la ruta actual.
-- Botón de inscripción destacado a la derecha.
-- En mobile: hamburguesa; el botón de inscripción queda visible fuera del menú.
+- Botón destacado a la derecha: "Inscribirme" mientras la inscripción esté
+  abierta; cuando se cierre, pasa a decir "Resultados" y apunta a `/resultados`
+  (pendiente de implementar, ver nota arriba).
+- En mobile: hamburguesa; ese botón queda visible fuera del menú.
 
 ### Footer
 

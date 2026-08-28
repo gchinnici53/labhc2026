@@ -12,7 +12,7 @@ const ENLACES: { href: Pathname; clave: string }[] = [
   { href: "/", clave: "inicio" },
   { href: "/acerca", clave: "acerca" },
   { href: "/competicion", clave: "competicion" },
-  { href: "/resultados", clave: "resultados" },
+  { href: "/reglamento", clave: "reglamento" },
   { href: "/registrados", clave: "registrados" },
   { href: "/alojamiento", clave: "alojamiento" },
 ];

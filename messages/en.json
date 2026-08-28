@@ -8,7 +8,7 @@
     "inicio": "Home",
     "acerca": "About",
     "competicion": "Competition",
-    "resultados": "Results",
+    "reglamento": "Rules",
     "registrados": "Registered",
     "alojamiento": "Accommodations",
     "inscripcion": "Register",
@@ -32,6 +32,7 @@
     "inicio": { "titulo": "Latin American Bowhunter Championship 2026" },
     "acerca": { "titulo": "About" },
     "competicion": { "titulo": "Competition" },
+    "reglamento": { "titulo": "Rules" },
     "resultados": { "titulo": "Results" },
     "registrados": { "titulo": "Registered" },
     "alojamiento": { "titulo": "Accommodations" },
@@ -173,5 +174,8 @@
   },
   "resultados": {
     "enConstruccion": "This section will be available closer to the tournament."
+  },
+  "reglamento": {
+    "texto": "Text (TBD)"
   }
 }

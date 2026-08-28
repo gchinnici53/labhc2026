@@ -57,3 +57,5 @@ visible en el sitio. **No inventar contenido para llenar estos huecos.**
 - [ ] Verificar los enums de división y estilo contra el Archer's Handbook IFAA vigente
 - [ ] ¿Hace falta guardar el número de licencia IFAA de cada arquero?
 - [ ] ¿El sitio necesita política de privacidad? (datos personales de menores de edad en Cub y Junior)
+- [ ] Texto de la página `/reglamento` (nueva, reemplaza a "Resultados" en el nav fijo — ver `02-SITEMAP.md`)
+- [ ] Implementar el reemplazo dinámico del botón "Inscribirme" → "Resultados" cuando `inscripcion_abierta = false` en `Configuracion` (depende del panel admin, Etapa 4/5+)
