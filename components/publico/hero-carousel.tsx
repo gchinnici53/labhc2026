@@ -1,18 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-// Sin fotos reales todavía (ver docs/04-PENDIENTES.md): cada slide es un
-// degradé con la paleta del sitio en vez de una imagen inventada.
-const CANTIDAD_SLIDES = 4;
 const INTERVALO_MS = 6000;
 
-const DEGRADES = [
-  "linear-gradient(135deg, #232A38 0%, #4E5E7D 60%, #E3313133 100%)",
-  "linear-gradient(135deg, #364156 0%, #4E5E7D 55%, #C12A2A33 100%)",
-  "linear-gradient(135deg, #232A38 0%, #364156 50%, #E3313133 100%)",
-  "linear-gradient(135deg, #4E5E7D 0%, #232A38 60%, #C12A2A33 100%)",
+const IMAGENES = [
+  "/banner/banner-1.jpg",
+  "/banner/banner-2.jpg",
+  "/banner/banner-3.jpg",
+  "/banner/banner-4.jpg",
 ];
 
 export function HeroCarousel() {
@@ -22,25 +20,30 @@ export function HeroCarousel() {
 
   useEffect(() => {
     const intervalo = setInterval(() => {
-      setSlideActual((actual) => (actual + 1) % CANTIDAD_SLIDES);
+      setSlideActual((actual) => (actual + 1) % IMAGENES.length);
     }, INTERVALO_MS);
     return () => clearInterval(intervalo);
   }, []);
 
   return (
     <section className="relative isolate flex min-h-[70vh] items-center overflow-hidden bg-primario-oscuro text-fondo">
-      {DEGRADES.map((degrade, indice) => (
+      {IMAGENES.map((imagen, indice) => (
         <div
-          key={indice}
+          key={imagen}
           aria-hidden={indice !== slideActual}
           className={`absolute inset-0 transition-opacity duration-1000 ${
             indice === slideActual ? "opacity-100" : "opacity-0"
           }`}
-          style={{ background: degrade }}
         >
-          <span className="absolute bottom-4 right-4 text-xs italic text-fondo/50">
-            {t("imagenPlaceholder")}
-          </span>
+          <Image
+            src={imagen}
+            alt=""
+            fill
+            priority={indice === 0}
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-primario-oscuro/80 via-primario-oscuro/30 to-primario-oscuro/50" />
         </div>
       ))}
 
@@ -62,9 +65,9 @@ export function HeroCarousel() {
       </div>
 
       <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
-        {DEGRADES.map((_, indice) => (
+        {IMAGENES.map((imagen, indice) => (
           <button
-            key={indice}
+            key={imagen}
             type="button"
             onClick={() => setSlideActual(indice)}
             aria-label={`Slide ${indice + 1}`}
