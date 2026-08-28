@@ -87,7 +87,25 @@
     },
     "bloque3": {
       "titulo": "Organizadores",
-      "texto": "Personas a cargo y sus roles (a definir)"
+      "intro": "El Campeonato Latinoamericano de Bowhunter 2026 está a cargo de un comité organizador integrado por cuatro referentes del Club Flechar y la Liga 3D Metropolitana.",
+      "comite": [
+        {
+          "nombre": "Fernando Rodríguez",
+          "bio": "Director y fundador de la Escuela de Arquería Flechar (2003). Campeón mundial de tiro en sala (2009), múltiple campeón nacional y campeón sudamericano de la disciplina. Profesor Nacional de Educación Física, Entrenador Nacional de tiro con arco e Instructor Internacional II de la IFAA. A lo largo de más de dos décadas formó a cientos de arqueros en las distintas sedes de Flechar, con un destacado trabajo en arquería adaptada e inclusiva."
+        },
+        {
+          "nombre": "Gustavo Chinnici",
+          "bio": "Presidente de la Liga 3D Metropolitana (L3DM) y arquero del Club Atlético Independiente. Tirador de longbow desde 2011. Participó de cuatro campeonatos mundiales de la IFAA: World Bowhunter Championships de 2017 en Chianti (Italia), 2023 en Rovaniemi (Finlandia) y 2025 en Sudáfrica, así como el World Field Championships de 2024 en Foz de Iguazú (Brasil). También compitió en el Campeonato Sudamericano Bowhunter de la IFAA 2018 en Campos do Jordão (Brasil) y en el Sudamericano 3D de World Archery 2019 en Paysandú (Uruguay)."
+        },
+        {
+          "nombre": "Eliana Pérez",
+          "bio": "Club Flechar. Campeona Latin American Indoor Championship 2022. Subcampeona Latin American Field Archery Championship 2023. Subcampeona mundial indoor 2025. Múltiple campeona nacional de las diferentes modalidades IFAA."
+        },
+        {
+          "nombre": "Andrés Grippo",
+          "bio": "Secretario de la Asociación Civil de Tiro con Arco La Liga y arquero del Club Atlético Independiente. Tirador de arco tradicional desde 2019 y de longbow desde 2026. Integró la Selección Argentina de 3D en el Rinehart World Archery 3D Championship de Terni, Italia (2022) y en el Mundial de Mokrice, Eslovenia (2024), y compitió en el IFAA World Bowhunter Championship (WBHC 2025) en Sudáfrica. Finalista de los Premios Jorge Newbery en la categoría Tiro con Arco (2023). Campeón nacional y regional de indoor (2023), subcampeón nacional de 3D (2023) y subcampeón nacional de Field IFAA (2026); campeón regional y metropolitano de aire libre (2021)."
+        }
+      ]
     }
   },
   "competicion": {

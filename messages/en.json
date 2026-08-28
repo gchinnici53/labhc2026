@@ -87,7 +87,25 @@
     },
     "bloque3": {
       "titulo": "Organizers",
-      "texto": "People in charge and their roles (TBD)"
+      "intro": "The Latin American Bowhunter Championship 2026 is run by an organizing committee made up of four leading figures from Club Flechar and Liga 3D Metropolitana.",
+      "comite": [
+        {
+          "nombre": "Fernando Rodríguez",
+          "bio": "Director and founder of the Flechar Archery School (2003). World indoor archery champion (2009), multiple-time national champion, and South American champion in the discipline. National Physical Education Teacher, National archery coach, and IFAA International Instructor II. Over more than two decades he has trained hundreds of archers across Flechar's various locations, with notable work in adaptive and inclusive archery."
+        },
+        {
+          "nombre": "Gustavo Chinnici",
+          "bio": "President of Liga 3D Metropolitana (L3DM) and archer at Club Atlético Independiente. Longbow shooter since 2011. He has taken part in four IFAA world championships: the World Bowhunter Championships in 2017 in Chianti (Italy), 2023 in Rovaniemi (Finland), and 2025 in South Africa, as well as the 2024 World Field Championships in Foz do Iguaçu (Brazil). He also competed in the 2018 IFAA South American Bowhunter Championship in Campos do Jordão (Brazil) and the 2019 World Archery South American 3D Championship in Paysandú (Uruguay)."
+        },
+        {
+          "nombre": "Eliana Pérez",
+          "bio": "Club Flechar. 2022 Latin American Indoor Championship winner. 2023 Latin American Field Archery Championship runner-up. 2025 indoor world runner-up. Multiple-time national champion across the different IFAA disciplines."
+        },
+        {
+          "nombre": "Andrés Grippo",
+          "bio": "Secretary of the Asociación Civil de Tiro con Arco La Liga and archer at Club Atlético Independiente. Traditional bow shooter since 2019 and longbow shooter since 2026. He was part of the Argentine 3D national team at the Rinehart World Archery 3D Championship in Terni, Italy (2022) and at the World Championship in Mokrice, Slovenia (2024), and competed at the IFAA World Bowhunter Championship (WBHC 2025) in South Africa. Finalist for the Jorge Newbery Awards in the Archery category (2023). National and regional indoor champion (2023), national 3D runner-up (2023), and national IFAA Field runner-up (2026); regional and metropolitan outdoor champion (2021)."
+        }
+      ]
     }
   },
   "competicion": {
