@@ -32,7 +32,7 @@ export default function PaginaAcerca() {
           <h2 className="font-display text-2xl uppercase tracking-wide text-primario">
             {t("bloque2.titulo")}
           </h2>
-          <p className="mt-3 italic text-texto/70">{t("bloque2.texto")}</p>
+          <p className="mt-3 text-texto/80">{t("bloque2.texto")}</p>
         </div>
         <div className="flex items-center justify-center rounded-lg border border-primario/10 bg-white p-8">
           <Image src="/logos/ifaa.png" alt="IFAA" width={140} height={222} className="h-32 w-auto object-contain" />
