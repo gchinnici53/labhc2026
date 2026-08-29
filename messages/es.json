@@ -63,7 +63,8 @@
       ]
     },
     "partners": {
-      "titulo": "Partners y auspiciantes"
+      "tituloPartners": "Partners",
+      "tituloAuspiciantes": "Auspiciantes"
     }
   },
   "acerca": {

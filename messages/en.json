@@ -63,7 +63,8 @@
       ]
     },
     "partners": {
-      "titulo": "Partners and sponsors"
+      "tituloPartners": "Partners",
+      "tituloAuspiciantes": "Sponsors"
     }
   },
   "acerca": {
