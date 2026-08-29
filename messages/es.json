@@ -203,6 +203,262 @@
     "enConstruccion": "Esta sección va a estar disponible más cerca del torneo."
   },
   "reglamento": {
-    "texto": "Texto (a definir)"
+    "intro": [
+      "El Latin American Bowhunter Championship 2026 se disputa bajo el reglamento oficial de la IFAA (International Field Archery Association). Para la mayoría de los arqueros de la Argentina, que vienen del 3D de World Archery, es un formato nuevo: se le tira a las mismas siluetas de animales y también hay que estimar distancias, pero las rondas, el puntaje y las categorías son distintos.",
+      "Esta sección resume, en lenguaje claro, todo lo que necesitás saber para competir: cómo son las rondas, cómo se colocan y puntúan los blancos, y en qué categoría vas a tirar. La idea es que llegues al torneo sabiendo exactamente qué esperar.",
+      "Es un resumen orientativo: busca explicar el formato, no reemplazar al reglamento. Ante cualquier diferencia, prevalece el Book of Rules oficial de la IFAA, que enlazamos al final."
+    ],
+    "indice": [
+      "Diferencias clave con World Archery",
+      "Las rondas de competencia",
+      "Grupos de animales y distancias",
+      "Sistema de puntuación",
+      "Estilos de tiro",
+      "Divisiones por edad",
+      "Clasificación por clases (A, B y C)",
+      "Equipo permitido y no permitido",
+      "Seguridad y conducta en cancha",
+      "Desempates",
+      "Reglamento oficial y descargas"
+    ],
+    "secciones": {
+      "s1": {
+        "titulo": "1. Diferencias clave con World Archery",
+        "intro": "Si venís del 3D de World Archery —como la mayoría de los arqueros en la Argentina—, vas a encontrarte con un terreno familiar (siluetas de animales, distancias que hay que estimar) pero un reglamento distinto. Estas son las diferencias que más importan:",
+        "tabla": {
+          "encabezados": ["Aspecto", "3D de World Archery", "Bowhunter IFAA"],
+          "filas": [
+            ["Organismo", "World Archery (federación olímpica)", "IFAA (International Field Archery Association)"],
+            ["Flechas por blanco", "Dos, desde la misma posición de tiro", "Varía según la ronda: 1 (Hunter), 2 (Standard) o hasta 3 (Animal)"],
+            ["Quién define la distancia", "El juez / diseñador del recorrido", "El grupo del animal (según su zona vital) y la división por edad"],
+            ["Distancias", "Desconocidas, en general más cortas", "Desconocidas, por grupo: hasta ~55 m (grupo 1)"],
+            ["Puntaje", "11 (centro) · 10 · 8 · 5", "Kill 20 · Vital 16 · Wound 10 (Standard y Hunter); en la Animal, 20/18 · 16/14 · 12/10 según la flecha"],
+            ["Divisiones de equipo", "4 (Compuesto, Barebow, Instintivo, Longbow)", "12 estilos (recurvo y compuesto compiten por separado)"],
+            ["Clases por nivel", "No existen", "Sí: A, B y C"],
+            ["Control en cancha", "Jueces y árbitros", "Los propios arqueros administran las reglas"]
+          ]
+        },
+        "resumen": "En resumen, lo que más te va a cambiar es: que no siempre tirás desde la misma estaca ni la misma cantidad de flechas (depende de la ronda), que el puntaje es otro (la vital vale 20, no 11), que hay muchas más categorías de equipo y un sistema de clases por nivel, y que la distancia la manda el animal, no el criterio del juez. La lógica de estimar distancia y leer el terreno, en cambio, te va a resultar conocida."
+      },
+      "s2": {
+        "titulo": "2. Las rondas de competencia",
+        "intro": "El torneo se disputa sobre un recorrido de 28 blancos por jornada, con tres rondas IFAA diferentes. Lo que cambia de una a otra es, sobre todo, cuántas flechas se tiran por blanco y cómo cuentan. En el LABHC se corre una ronda por día:",
+        "rondas": [
+          "Domingo — Animal Round (hasta 3 flechas)",
+          "Lunes — Standard Round (2 flechas)",
+          "Martes — Hunter Round (1 flecha)"
+        ],
+        "sub": [
+          {
+            "titulo": "Animal Round (Unmarked Animal Round) — hasta 3 flechas",
+            "texto": "Es una ronda tipo “walk-up”: se tira hasta acertar. El arquero dispone de un máximo de tres flechas por blanco, pero se detiene apenas mete una en zona de puntaje. La primera flecha vale más que la segunda, y la segunda más que la tercera, así que conviene resolver el blanco cuanto antes. Si la primera entra en zona de puntaje, no se tiran las otras dos."
+          },
+          {
+            "titulo": "Standard Round (3D Standard Round) — 2 flechas",
+            "texto": "Es la ronda más parecida a lo que conoce el tirador de 3D de World Archery, aunque con una diferencia: en WA se tiran las dos flechas desde la misma estaca, mientras que en la Standard IFAA hay dos estacas a distinta distancia y se tira una flecha desde cada una. Las dos cuentan para el puntaje."
+          },
+          {
+            "titulo": "Hunter Round (3D Hunting Round) — 1 flecha",
+            "texto": "Una sola flecha por blanco. Un disparo, un puntaje, sin segundas oportunidades. Es la ronda más exigente en precisión y lectura de distancia —no hay margen de corrección— y por eso cierra la competencia."
+          }
+        ],
+        "cierre": "En las tres rondas las distancias son desconocidas: el arquero estima cada una (ver “Grupos de animales y distancias”). El detalle de cuánto suma cada zona del animal se explica en “Sistema de puntuación”."
+      },
+      "s3": {
+        "titulo": "3. Grupos de animales y distancias",
+        "intro": "En IFAA, el tamaño de la zona vital del animal determina a qué distancia se coloca: cuanto más grande es la zona vital, más lejos se tira; cuanto más chica, más cerca. Por eso cada silueta 3D se clasifica en uno de cuatro grupos, y ese grupo define el rango de distancia del blanco.",
+        "intro2": "Es una diferencia importante con World Archery, donde la distancia de cada blanco la define el criterio del juez que diseña el recorrido. En IFAA está reglada: depende del grupo del animal (según su zona vital) y de la división por edad.",
+        "tabla": {
+          "encabezados": ["Grupo", "Medida de la zona vital", "Rango de distancia (adultos)"],
+          "filas": [
+            ["1", "más de 25 cm", "40 a 60 yardas (≈ 37 a 55 m)"],
+            ["2", "entre 20,1 y 25 cm", "30 a 45 yardas (≈ 27 a 41 m)"],
+            ["3", "entre 15 y 20 cm", "20 a 35 yardas (≈ 18 a 32 m)"],
+            ["4", "menos de 15 cm", "10 a 20 yardas (≈ 9 a 18 m)"]
+          ]
+        },
+        "notas": [
+          "Las distancias son desconocidas: cada blanco se coloca dentro del rango de su grupo, pero en cancha no está marcado. El arquero estima la distancia.",
+          "La cantidad de posiciones de tiro cambia según la ronda: en la Animal Round los grupos 1 y 2 son walk-up (varias estacas dentro de su rango); en la Standard son dos estacas; en la Hunter, una sola.",
+          "Las divisiones más jóvenes tiran más cerca: los Cub, por ejemplo, no superan las ~30 yardas y usan estacas propias (marcadores negros).",
+          "Cada modelo 3D se clasifica por la medida real de su zona vital, así que una misma especie puede caer en distinto grupo según el modelo."
+        ]
+      },
+      "s4": {
+        "titulo": "4. Sistema de puntuación",
+        "intro": "Cada silueta 3D tiene tres zonas de puntaje, de mayor a menor valor: Kill (el centro del área vital), Vital (el resto del área vital) y Wound / Herida (el cuerpo del animal fuera de la vital). Los cuernos, astas y la base no puntúan, y la flecha debe quedar clavada en el cuerpo del animal para contar.",
+        "intro2": "Ahora bien, cómo se traducen esas zonas en puntos depende de la ronda:",
+        "standardHunter": {
+          "titulo": "Standard Round y Hunter Round",
+          "texto": "En estas dos rondas, cada flecha vale lo mismo según la zona donde impacte:",
+          "tabla": {
+            "encabezados": ["Zona", "Puntos"],
+            "filas": [
+              ["Kill", "20"],
+              ["Vital", "16"],
+              ["Wound (herida)", "10"],
+              ["Fuera / no clavada", "0"]
+            ]
+          },
+          "cierre": "En la Hunter se tira una flecha por blanco (máximo 560 puntos). En la Standard, dos flechas por blanco y las dos suman (máximo 1120 puntos)."
+        },
+        "animalRound": {
+          "titulo": "Animal Round",
+          "texto": "Acá el puntaje baja con cada flecha sucesiva: premia resolver el blanco al primer disparo. Se tira hasta acertar (máximo tres flechas) y solo cuenta la primera flecha que entra en zona de puntaje.",
+          "tabla": {
+            "encabezados": ["Flecha", "Zona vital (Kill/Vital)", "Zona de herida (Wound)"],
+            "filas": [
+              ["1ª flecha", "20", "18"],
+              ["2ª flecha", "16", "14"],
+              ["3ª flecha", "12", "10"]
+            ]
+          },
+          "cierre": "Es decir: si tu primera flecha entra en la vital, sumás 20 y no tirás más. Si fallás la primera y clavás la vital con la segunda, sumás 16. Si las tres fallan la zona de puntaje, es 0 (máximo de la ronda: 560 puntos)."
+        },
+        "reglasGenerales": {
+          "titulo": "Reglas generales de puntaje",
+          "items": [
+            "La flecha que corta la línea entre dos zonas cuenta para el valor mayor.",
+            "Una flecha que atraviesa el animal y no queda embebida no puntúa.",
+            "No se toca ninguna flecha ni se retira del blanco hasta que todas hayan sido puntuadas.",
+            "Un fallo (fuera del animal o sin clavar) suma 0."
+          ]
+        }
+      },
+      "s5": {
+        "titulo": "5. Estilos de tiro (categorías de equipo)",
+        "intro": "A diferencia de World Archery, la IFAA reconoce doce estilos según el tipo de arco y los accesorios permitidos. Cada tipo de arco es una categoría con su propia sigla: recurvo y compuesto no compiten entre sí.",
+        "sinVisor": {
+          "titulo": "Estilos sin visor (se apunta sin miras)",
+          "items": [
+            { "sigla": "BBR", "nombre": "Barebow Recurvo", "texto": "recurvo sin visor ni marcas de puntería; se apunta con la técnica del arquero (por ejemplo, stringwalking)." },
+            { "sigla": "BBC", "nombre": "Barebow Compuesto", "texto": "mismo estilo, con arco compuesto." },
+            { "sigla": "BHR", "nombre": "Bowhunter Recurvo", "texto": "recurvo sin visor y sin marcas de referencia en el arco; se suelta con los dedos." },
+            { "sigla": "BHC", "nombre": "Bowhunter Compuesto", "texto": "mismo estilo, con arco compuesto." },
+            { "sigla": "LB", "nombre": "Longbow", "texto": "arco largo tradicional, sin visor." },
+            { "sigla": "TR", "nombre": "Recurvo Tradicional", "texto": "recurvo tradicional, sin visor." },
+            { "sigla": "HB", "nombre": "Arco Histórico", "texto": "arcos históricos o primitivos (con diseño anterior a 1900 y materiales tradicionales), según el reglamento." }
+          ]
+        },
+        "conVisor": {
+          "titulo": "Estilos con visor",
+          "items": [
+            { "sigla": "FSR", "nombre": "Freestyle Limited Recurvo", "texto": "con visor, pero sin disparador (se suelta con los dedos). Equivale al estilo “olímpico”." },
+            { "sigla": "FSC", "nombre": "Freestyle Limited Compuesto", "texto": "con visor y sin disparador, con arco compuesto." },
+            { "sigla": "FU", "nombre": "Freestyle Unlimited", "texto": "con visor y disparador mecánico (release). Es el estilo con más ayudas permitidas." },
+            { "sigla": "BL", "nombre": "Bowhunter Limited", "texto": "visor de pines fijos, sin disparador (dedos)." },
+            { "sigla": "BU", "nombre": "Bowhunter Unlimited", "texto": "visor de pines fijos, con disparador." }
+          ]
+        },
+        "cierre": "En la tarjeta del arquero, la sigla completa combina división + sexo + estilo. Por ejemplo, un adulto varón que tira Barebow Recurvo figura como AMBBR (Adult Male Barebow Recurve)."
+      },
+      "s6": {
+        "titulo": "6. Divisiones por edad",
+        "intro": "La edad se toma al primer día del torneo. La IFAA reconoce estas divisiones:",
+        "items": [
+          "Cub — menores de 13 años (tiran con un rango de estilos reducido y acompañados por un adulto responsable no tirador).",
+          "Junior — de 13 a 16 años.",
+          "Young Adult (Adulto Joven) — de 17 a 18 años.",
+          "Adulto — 19 años en adelante.",
+          "Veterano — 55 años en adelante (puede optar por competir en Veterano o en Adulto).",
+          "Senior — 65 años en adelante (puede optar por Senior, Veterano o Adulto)."
+        ]
+      },
+      "s7": {
+        "titulo": "7. Clasificación por clases (A, B y C)",
+        "intro": "Este es uno de los conceptos que no existe en el 3D de World Archery. Dentro de cada estilo y división, la IFAA ordena a los arqueros en clases según su nivel —A, B o C—, en función de sus puntajes previos registrados en su tarjeta de clasificación. El objetivo es que compitas contra arqueros de rendimiento parecido: un principiante no compite de igual a igual contra uno de elite.",
+        "items": [
+          "Tu clase se determina a partir de los puntajes obtenidos en rondas anteriores conforme al reglamento IFAA.",
+          "Quien no tenga puntajes previos suficientes para clasificar, compite en la clase más alta de su estilo hasta establecer su clasificación.",
+          "Las divisiones Veterano y Senior no se subdividen en clases."
+        ]
+      },
+      "s8": {
+        "titulo": "8. Equipo permitido y no permitido",
+        "intro": "Cada estilo tiene sus propias especificaciones de equipo (visor, estabilizadores, libraje, tipo de flecha), detalladas en el Book of Rules de la IFAA. Más allá de eso, estas son las reglas generales que aplican a todos los participantes:",
+        "grupos": [
+          {
+            "titulo": "Puntas y flechas",
+            "items": [
+              "Se tira con puntas de campo (target/field points), no de caza (broadheads), por seguridad y para preservar las dianas.",
+              "Cada arquero debe identificar sus flechas (marcadas/anilladas) para poder puntuarlas sin confusión, sobre todo en la Animal Round."
+            ]
+          },
+          {
+            "titulo": "Velocidad de flecha",
+            "items": [
+              "Existe un límite de velocidad de flecha (del orden de 300 fps / ~91 m/s, con una tolerancia; algunos estilos de arco compuesto admiten hasta ~330 fps). El valor exacto por estilo lo confirma la organización según el Book of Rules vigente."
+            ]
+          },
+          {
+            "titulo": "Medición de distancia",
+            "items": [
+              "Al ser rondas de distancia desconocida, están prohibidos los telémetros y cualquier dispositivo electrónico de medición de distancia.",
+              "Los binoculares están permitidos para observar el blanco, siempre que no tengan retícula ni escala que sirva para calcular la distancia."
+            ]
+          },
+          {
+            "titulo": "Durante la competencia",
+            "items": [
+              "El libraje del arco no se modifica durante una misma ronda.",
+              "Se admite una sola falla de equipo por ronda (para reparación o reemplazo, según el procedimiento del reglamento).",
+              "No se permiten ayudas de puntería ni marcas de referencia más allá de lo que cada estilo autoriza."
+            ]
+          }
+        ],
+        "cierre": "Para las especificaciones completas de cada estilo —libraje, visores, estabilizadores, tipo de flecha, materiales y demás detalles puntuales—, consultá el Book of Rules oficial de la IFAA."
+      },
+      "s9": {
+        "titulo": "9. Seguridad y conducta en cancha",
+        "intro": "La seguridad es la prioridad absoluta del torneo. Todos los participantes deben conocer y respetar estas normas:",
+        "grupos": [
+          {
+            "titulo": "En la línea de tiro",
+            "items": [
+              "No se tensa ni se dispara el arco hasta que el grupo esté en posición y el blanco esté despejado (sin personas delante de la línea de tiro).",
+              "El arco se tensa apuntando hacia el blanco, nunca hacia arriba ni hacia los costados.",
+              "Se dispara desde la estaca que corresponde a la división y ronda: un pie debe tocar la estaca o estar a no más de unos centímetros de ella.",
+              "Nadie avanza hacia el blanco hasta que todos los integrantes del grupo hayan terminado de tirar."
+            ]
+          },
+          {
+            "titulo": "En el recorrido",
+            "items": [
+              "Se respeta el orden de tiro y el ritmo del grupo; no se adelanta a otros grupos sin autorización.",
+              "Al buscar flechas, se avanza con cuidado y se avisa la presencia detrás de las dianas.",
+              "Terreno natural: atención a desniveles, raíces, ramas y fauna. Calzado y ropa adecuados."
+            ]
+          },
+          {
+            "titulo": "Conducta",
+            "items": [
+              "En IFAA son los propios arqueros quienes administran las reglas en cancha: prima la honestidad, el respeto y el juego limpio. Cada grupo verifica y anota los puntajes de común acuerdo.",
+              "Ante una duda de puntaje o de regla que el grupo no pueda resolver, se convoca a un oficial de campo.",
+              "El consumo de alcohol antes o durante la competencia está prohibido.",
+              "Toda conducta antideportiva o insegura puede derivar en sanción o descalificación.",
+              "Los Cub (menores de 13) tiran en sus propios grupos, acompañados por un adulto responsable no tirador."
+            ]
+          }
+        ]
+      },
+      "s10": {
+        "titulo": "10. Desempates",
+        "intro": "Cuando dos o más arqueros terminan con el mismo puntaje disputándose un premio (podio o posición con reconocimiento), el empate se resuelve así:",
+        "items": [
+          "Por calidad de impactos (count-back): se compara la cantidad de impactos de mayor valor. Gana quien tenga más Kills; si persiste el empate, más Vitals, y así sucesivamente.",
+          "Por desempate de tiro (shoot-off): si el criterio anterior no alcanza para resolver, los arqueros involucrados definen con una tanda de desempate, sobre blancos dispuestos a tal fin, según lo establezca la organización."
+        ],
+        "cierre": "El procedimiento exacto (cantidad de blancos, distancias y tamaños de cara del desempate) es el que fija el Book of Rules de la IFAA para este tipo de campeonato, y lo confirma la organización antes del torneo. Los empates en posiciones sin premio pueden dejarse como posición compartida."
+      },
+      "s11": {
+        "titulo": "11. Reglamento oficial y descargas",
+        "intro": "Esta sección es un resumen orientativo para ayudarte a entender el formato del torneo. El reglamento que rige la competencia es el oficial de la IFAA, y ante cualquier diferencia, prevalece ese documento.",
+        "links": {
+          "bookOfRules": { "texto": "Book of Rules de la IFAA — el reglamento completo (estilos, rondas, puntajes, distancias, equipo y procedimientos).", "url": "https://www.ifaa-archery.org/documents/" },
+          "sitioOficial": { "texto": "Sitio oficial de la IFAA — información institucional y documentos actualizados.", "url": "https://www.ifaa-archery.org/" },
+          "competicion": { "texto": "Competición (LABHC 2026) — el formato específico del torneo." }
+        }
+      }
+    }
   }
 }

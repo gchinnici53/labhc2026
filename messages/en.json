@@ -203,6 +203,262 @@
     "enConstruccion": "This section will be available closer to the tournament."
   },
   "reglamento": {
-    "texto": "Text (TBD)"
+    "intro": [
+      "The Latin American Bowhunter Championship 2026 is held under the official IFAA (International Field Archery Association) rules. For most archers in Argentina, who come from World Archery 3D, this is a new format: you shoot at the same animal silhouettes and still have to judge distances, but the rounds, scoring, and categories are different.",
+      "This section summarizes, in plain language, everything you need to know to compete: what the rounds are like, how targets are placed and scored, and which category you'll shoot in. The idea is that you arrive at the tournament knowing exactly what to expect.",
+      "This is a guiding summary: it aims to explain the format, not replace the rulebook. In case of any discrepancy, the official IFAA Book of Rules prevails — we link to it at the end."
+    ],
+    "indice": [
+      "Key differences from World Archery",
+      "Competition rounds",
+      "Animal groups and distances",
+      "Scoring system",
+      "Shooting styles",
+      "Age divisions",
+      "Class ranking (A, B, and C)",
+      "Permitted and non-permitted equipment",
+      "Range safety and conduct",
+      "Tiebreakers",
+      "Official rulebook and downloads"
+    ],
+    "secciones": {
+      "s1": {
+        "titulo": "1. Key differences from World Archery",
+        "intro": "If you come from World Archery 3D — like most archers in Argentina — you'll find familiar terrain (animal silhouettes, distances you have to judge) but a different rulebook. These are the differences that matter most:",
+        "tabla": {
+          "encabezados": ["Aspect", "World Archery 3D", "IFAA Bowhunter"],
+          "filas": [
+            ["Governing body", "World Archery (Olympic federation)", "IFAA (International Field Archery Association)"],
+            ["Arrows per target", "Two, from the same shooting position", "Varies by round: 1 (Hunter), 2 (Standard), or up to 3 (Animal)"],
+            ["Who sets the distance", "The judge / course designer", "The animal's group (based on its vital zone) and the age division"],
+            ["Distances", "Unmarked, generally shorter", "Unmarked, by group: up to ~55 m (group 1)"],
+            ["Scoring", "11 (center) · 10 · 8 · 5", "Kill 20 · Vital 16 · Wound 10 (Standard and Hunter); in Animal, 20/18 · 16/14 · 12/10 depending on the arrow"],
+            ["Equipment divisions", "4 (Compound, Barebow, Instinctive, Longbow)", "12 styles (recurve and compound compete separately)"],
+            ["Skill classes", "None", "Yes: A, B, and C"],
+            ["Range officiating", "Judges and referees", "Archers self-officiate"]
+          ]
+        },
+        "resumen": "In short, what will change the most for you is: you won't always shoot from the same stake or the same number of arrows (it depends on the round), the scoring is different (the vital is worth 20, not 11), there are many more equipment categories plus a skill-class system, and the animal's group sets the distance instead of the judge's call. The logic of judging distance and reading the terrain, on the other hand, will feel familiar."
+      },
+      "s2": {
+        "titulo": "2. Competition rounds",
+        "intro": "The tournament is held on a 28-target course per day, with three different IFAA rounds. What changes from one to another is mainly how many arrows are shot per target and how they count. At LABHC, one round is run per day:",
+        "rondas": [
+          "Sunday — Animal Round (up to 3 arrows)",
+          "Monday — Standard Round (2 arrows)",
+          "Tuesday — Hunter Round (1 arrow)"
+        ],
+        "sub": [
+          {
+            "titulo": "Animal Round (Unmarked Animal Round) — up to 3 arrows",
+            "texto": "This is a 'walk-up' round: you shoot until you score. The archer has a maximum of three arrows per target, but stops as soon as one lands in the scoring zone. The first arrow is worth more than the second, and the second more than the third, so it pays to resolve the target as soon as possible. If the first arrow scores, the other two aren't shot."
+          },
+          {
+            "titulo": "Standard Round (3D Standard Round) — 2 arrows",
+            "texto": "This is the round most similar to what World Archery 3D shooters already know, with one difference: in WA both arrows are shot from the same stake, while in IFAA Standard there are two stakes at different distances and one arrow is shot from each. Both count toward the score."
+          },
+          {
+            "titulo": "Hunter Round (3D Hunting Round) — 1 arrow",
+            "texto": "A single arrow per target. One shot, one score, no second chances. It's the round that demands the most precision and distance-reading — there's no room for correction — which is why it closes out the competition."
+          }
+        ],
+        "cierre": "In all three rounds the distances are unmarked: the archer judges each one (see 'Animal groups and distances'). The detail of how much each zone of the animal is worth is explained in 'Scoring system'."
+      },
+      "s3": {
+        "titulo": "3. Animal groups and distances",
+        "intro": "In IFAA, the size of the animal's vital zone determines how far away the target is placed: the bigger the vital zone, the farther the shot; the smaller, the closer. That's why every 3D silhouette is classified into one of four groups, and that group defines the target's distance range.",
+        "intro2": "This is an important difference from World Archery, where each target's distance is set by the judge who designs the course. In IFAA it's regulated: it depends on the animal's group (based on its vital zone) and the age division.",
+        "tabla": {
+          "encabezados": ["Group", "Vital zone size", "Distance range (adults)"],
+          "filas": [
+            ["1", "more than 25 cm", "40 to 60 yards (≈ 37 to 55 m)"],
+            ["2", "between 20.1 and 25 cm", "30 to 45 yards (≈ 27 to 41 m)"],
+            ["3", "between 15 and 20 cm", "20 to 35 yards (≈ 18 to 32 m)"],
+            ["4", "less than 15 cm", "10 to 20 yards (≈ 9 to 18 m)"]
+          ]
+        },
+        "notas": [
+          "Distances are unmarked: each target is placed within its group's range, but it isn't marked on the range. The archer judges the distance.",
+          "The number of shooting positions changes by round: in the Animal Round, groups 1 and 2 are walk-up (several stakes within their range); in Standard there are two stakes; in Hunter, just one.",
+          "Younger divisions shoot from closer: Cubs, for example, don't exceed ~30 yards and use their own stakes (black markers).",
+          "Each 3D model is classified by the actual measurement of its vital zone, so the same species can fall into a different group depending on the model."
+        ]
+      },
+      "s4": {
+        "titulo": "4. Scoring system",
+        "intro": "Every 3D silhouette has three scoring zones, from highest to lowest value: Kill (the center of the vital area), Vital (the rest of the vital area), and Wound (the animal's body outside the vital). Horns, antlers, and the base don't score, and the arrow must be lodged in the animal's body to count.",
+        "intro2": "Now, how those zones translate into points depends on the round:",
+        "standardHunter": {
+          "titulo": "Standard Round and Hunter Round",
+          "texto": "In these two rounds, every arrow is worth the same depending on the zone it hits:",
+          "tabla": {
+            "encabezados": ["Zone", "Points"],
+            "filas": [
+              ["Kill", "20"],
+              ["Vital", "16"],
+              ["Wound", "10"],
+              ["Out / not stuck", "0"]
+            ]
+          },
+          "cierre": "In Hunter, one arrow is shot per target (maximum 560 points). In Standard, two arrows per target and both count (maximum 1120 points)."
+        },
+        "animalRound": {
+          "titulo": "Animal Round",
+          "texto": "Here the score drops with each successive arrow: it rewards resolving the target on the first shot. You shoot until you score (maximum three arrows), and only the first arrow that lands in a scoring zone counts.",
+          "tabla": {
+            "encabezados": ["Arrow", "Vital zone (Kill/Vital)", "Wound zone"],
+            "filas": [
+              ["1st arrow", "20", "18"],
+              ["2nd arrow", "16", "14"],
+              ["3rd arrow", "12", "10"]
+            ]
+          },
+          "cierre": "In other words: if your first arrow lands in the vital, you score 20 and don't shoot again. If you miss the first and hit the vital with the second, you score 16. If all three miss the scoring zone, it's 0 (round maximum: 560 points)."
+        },
+        "reglasGenerales": {
+          "titulo": "General scoring rules",
+          "items": [
+            "An arrow that cuts the line between two zones counts for the higher value.",
+            "An arrow that passes through the animal and doesn't stay lodged doesn't score.",
+            "No arrow is touched or removed from the target until all of them have been scored.",
+            "A miss (off the animal or not stuck) scores 0."
+          ]
+        }
+      },
+      "s5": {
+        "titulo": "5. Shooting styles (equipment categories)",
+        "intro": "Unlike World Archery, the IFAA recognizes twelve styles based on bow type and permitted accessories. Each bow type is its own category with its own acronym: recurve and compound don't compete against each other.",
+        "sinVisor": {
+          "titulo": "Styles without sights (aimed without sighting devices)",
+          "items": [
+            { "sigla": "BBR", "nombre": "Barebow Recurve", "texto": "recurve with no sight or aiming marks; aimed using the archer's own technique (for example, stringwalking)." },
+            { "sigla": "BBC", "nombre": "Barebow Compound", "texto": "same style, with a compound bow." },
+            { "sigla": "BHR", "nombre": "Bowhunter Recurve", "texto": "recurve with no sight and no reference marks on the bow; released with the fingers." },
+            { "sigla": "BHC", "nombre": "Bowhunter Compound", "texto": "same style, with a compound bow." },
+            { "sigla": "LB", "nombre": "Longbow", "texto": "traditional long bow, no sight." },
+            { "sigla": "TR", "nombre": "Traditional Recurve", "texto": "traditional recurve, no sight." },
+            { "sigla": "HB", "nombre": "Historical Bow", "texto": "historical or primitive bows (pre-1900 design and traditional materials), per the rulebook." }
+          ]
+        },
+        "conVisor": {
+          "titulo": "Styles with sights",
+          "items": [
+            { "sigla": "FSR", "nombre": "Freestyle Limited Recurve", "texto": "with a sight, but no release aid (released with the fingers). Equivalent to the \"Olympic\" style." },
+            { "sigla": "FSC", "nombre": "Freestyle Limited Compound", "texto": "with a sight and no release aid, compound bow." },
+            { "sigla": "FU", "nombre": "Freestyle Unlimited", "texto": "with a sight and mechanical release aid. The style with the most aids allowed." },
+            { "sigla": "BL", "nombre": "Bowhunter Limited", "texto": "fixed-pin sight, no release aid (fingers)." },
+            { "sigla": "BU", "nombre": "Bowhunter Unlimited", "texto": "fixed-pin sight, with release aid." }
+          ]
+        },
+        "cierre": "On the archer's scorecard, the full code combines division + sex + style. For example, an adult male shooting Barebow Recurve appears as AMBBR (Adult Male Barebow Recurve)."
+      },
+      "s6": {
+        "titulo": "6. Age divisions",
+        "intro": "Age is taken as of the first day of the tournament. The IFAA recognizes these divisions:",
+        "items": [
+          "Cub — under 13 (shoot with a reduced range of styles and accompanied by a non-shooting responsible adult).",
+          "Junior — 13 to 16.",
+          "Young Adult — 17 to 18.",
+          "Adult — 19 and up.",
+          "Veteran — 55 and up (may choose to compete as Veteran or Adult).",
+          "Senior — 65 and up (may choose Senior, Veteran, or Adult)."
+        ]
+      },
+      "s7": {
+        "titulo": "7. Class ranking (A, B, and C)",
+        "intro": "This is a concept that doesn't exist in World Archery 3D. Within each style and division, the IFAA ranks archers into classes by skill level — A, B, or C — based on their previous scores on record on their classification card. The goal is for you to compete against archers of similar performance: a beginner doesn't compete on equal terms against an elite archer.",
+        "items": [
+          "Your class is determined from scores obtained in previous rounds per the IFAA rulebook.",
+          "Anyone without enough previous scores to be classified competes in the highest class of their style until their classification is established.",
+          "The Veteran and Senior divisions are not subdivided into classes."
+        ]
+      },
+      "s8": {
+        "titulo": "8. Permitted and non-permitted equipment",
+        "intro": "Each style has its own equipment specifications (sight, stabilizers, draw weight, arrow type), detailed in the IFAA Book of Rules. Beyond that, these are the general rules that apply to all participants:",
+        "grupos": [
+          {
+            "titulo": "Points and arrows",
+            "items": [
+              "Shooting is done with field/target points, not broadheads, for safety and to preserve the targets.",
+              "Each archer must identify their arrows (marked/crested) so they can be scored without confusion, especially in the Animal Round."
+            ]
+          },
+          {
+            "titulo": "Arrow speed",
+            "items": [
+              "There is an arrow speed limit (on the order of 300 fps / ~91 m/s, with some tolerance; some compound bow styles allow up to ~330 fps). The exact value per style is confirmed by the organization per the current Book of Rules."
+            ]
+          },
+          {
+            "titulo": "Distance measurement",
+            "items": [
+              "Since these are unmarked-distance rounds, rangefinders and any electronic distance-measuring device are prohibited.",
+              "Binoculars are allowed to view the target, as long as they don't have a reticle or scale that can be used to calculate distance."
+            ]
+          },
+          {
+            "titulo": "During competition",
+            "items": [
+              "The bow's draw weight isn't changed during a single round.",
+              "Only one equipment failure is allowed per round (for repair or replacement, per the rulebook's procedure).",
+              "No aiming aids or reference marks are allowed beyond what each style authorizes."
+            ]
+          }
+        ],
+        "cierre": "For the complete specifications of each style — draw weight, sights, stabilizers, arrow type, materials, and other specific details — check the official IFAA Book of Rules."
+      },
+      "s9": {
+        "titulo": "9. Range safety and conduct",
+        "intro": "Safety is the tournament's absolute priority. All participants must know and follow these rules:",
+        "grupos": [
+          {
+            "titulo": "At the shooting line",
+            "items": [
+              "The bow isn't drawn or shot until the group is in position and the target is clear (no one in front of the shooting line).",
+              "The bow is drawn pointing at the target, never upward or to the sides.",
+              "Shots are taken from the stake that corresponds to the division and round: one foot must touch the stake or be no more than a few centimeters from it.",
+              "No one moves toward the target until everyone in the group has finished shooting."
+            ]
+          },
+          {
+            "titulo": "On the course",
+            "items": [
+              "The shooting order and the group's pace are respected; groups don't pass others without authorization.",
+              "When looking for arrows, move carefully and announce your presence behind the targets.",
+              "Natural terrain: watch for uneven ground, roots, branches, and wildlife. Wear appropriate footwear and clothing."
+            ]
+          },
+          {
+            "titulo": "Conduct",
+            "items": [
+              "In IFAA, archers self-officiate on the range: honesty, respect, and fair play come first. Each group checks and records scores by mutual agreement.",
+              "If there's a scoring or rules question the group can't resolve, a field official is called.",
+              "Alcohol consumption before or during competition is prohibited.",
+              "Any unsportsmanlike or unsafe conduct may result in a penalty or disqualification.",
+              "Cubs (under 13) shoot in their own groups, accompanied by a non-shooting responsible adult."
+            ]
+          }
+        ]
+      },
+      "s10": {
+        "titulo": "10. Tiebreakers",
+        "intro": "When two or more archers finish tied on points and are competing for an award (podium or a recognized placing), the tie is broken as follows:",
+        "items": [
+          "By hit quality (count-back): the number of higher-value hits is compared. Whoever has more Kills wins; if the tie persists, more Vitals, and so on.",
+          "By shoot-off: if the previous criterion isn't enough to settle it, the archers involved decide it with a tiebreaker round, on targets set up for that purpose, as established by the organization."
+        ],
+        "cierre": "The exact procedure (number of targets, distances, and face sizes for the tiebreaker) is the one set by the IFAA Book of Rules for this type of championship, confirmed by the organization before the tournament. Ties in positions without an award may be left as a shared placing."
+      },
+      "s11": {
+        "titulo": "11. Official rulebook and downloads",
+        "intro": "This section is a guiding summary to help you understand the tournament's format. The rulebook governing the competition is the official IFAA one, and in case of any discrepancy, that document prevails.",
+        "links": {
+          "bookOfRules": { "texto": "IFAA Book of Rules — the complete rulebook (styles, rounds, scoring, distances, equipment, and procedures).", "url": "https://www.ifaa-archery.org/documents/" },
+          "sitioOficial": { "texto": "Official IFAA website — institutional information and up-to-date documents.", "url": "https://www.ifaa-archery.org/" },
+          "competicion": { "texto": "Competition (LABHC 2026) — the tournament's specific format." }
+        }
+      }
+    }
   }
 }
