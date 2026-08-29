@@ -35,7 +35,7 @@ export default function PaginaCompeticion() {
         <dl className="mt-4 divide-y divide-primario/10 rounded-lg border border-primario/10">
           <div className="grid grid-cols-1 gap-1 px-4 py-3 sm:grid-cols-3 sm:gap-4 sm:gap-y-0">
             <dt className="font-semibold text-primario">{tDatos("nombre")}</dt>
-            <dd className="sm:col-span-2 italic text-texto/70">{tDatos("nombreValor")}</dd>
+            <dd className="sm:col-span-2 text-texto/80">{tDatos("nombreValor")}</dd>
           </div>
           <div className="grid grid-cols-1 gap-1 px-4 py-3 sm:grid-cols-3 sm:gap-4 sm:gap-y-0">
             <dt className="font-semibold text-primario">{tDatos("fecha")}</dt>
