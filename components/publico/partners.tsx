@@ -8,6 +8,8 @@ const PARTNERS = [
   { nombre: "IFAA Family of Archers", archivo: "family.png" },
   { nombre: "IFAA", archivo: "ifaa.png" },
   { nombre: "TAFISA", archivo: "tafisa.png" },
+  { nombre: "Flechar", archivo: "flechar.png" },
+  { nombre: "Liga 3D Metropolitana", archivo: "liga3d.png" },
 ];
 
 const AUSPICIANTES = [
