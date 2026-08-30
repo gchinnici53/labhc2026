@@ -508,7 +508,8 @@
       "requerido": "This field is required.",
       "email_invalido": "Enter a valid email.",
       "debe_aceptar": "You need to accept the rules to continue.",
-      "division_no_coincide": "That category doesn't match your age at the start of the tournament (December 5th, 2026)."
+      "division_no_coincide": "That category doesn't match your age at the start of the tournament (December 5th, 2026).",
+      "ya_inscripto": "There's already a registration with that name and date of birth."
     },
     "enviar": "Register",
     "enviando": "Sending…",

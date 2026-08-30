@@ -68,6 +68,12 @@ export function FormularioInscripcion() {
     <form action={accion} className="mx-auto max-w-2xl">
       <p className="mb-6 text-sm italic text-texto/60">{t("camposObligatorios")}</p>
 
+      {estado && !estado.ok && estado.errorGeneral && (
+        <p className="mb-6 rounded-md border border-acento/30 bg-acento/5 px-4 py-3 text-sm font-semibold text-acento">
+          {t(`errores.${estado.errorGeneral}`)}
+        </p>
+      )}
+
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="nombre" className={CLASE_LABEL}>

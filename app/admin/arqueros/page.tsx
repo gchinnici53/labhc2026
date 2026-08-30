@@ -2,7 +2,12 @@ import Link from "next/link";
 import { PanelAdmin } from "@/components/admin/panel-admin";
 import { BotonEliminarArquero } from "@/components/admin/boton-eliminar-arquero";
 import { prisma } from "@/lib/prisma";
-import { ETIQUETAS_DIVISION, ETIQUETAS_ESTILO, ETIQUETAS_GENERO } from "@/lib/etiquetas";
+import {
+  calcularCodigoArquero,
+  ETIQUETAS_DIVISION,
+  ETIQUETAS_ESTILO,
+  ETIQUETAS_GENERO,
+} from "@/lib/etiquetas";
 
 const ORDENES = ["apellido", "numeroRegistro"] as const;
 type Orden = (typeof ORDENES)[number];
@@ -61,8 +66,9 @@ export default async function PaginaArqueros({
               <th className="px-3 py-2 font-semibold text-primario">Federación</th>
               <th className="px-3 py-2 font-semibold text-primario">Email</th>
               <th className="px-3 py-2 font-semibold text-primario">Género</th>
-              <th className="px-3 py-2 font-semibold text-primario">División</th>
+              <th className="px-3 py-2 font-semibold text-primario">Categoría</th>
               <th className="px-3 py-2 font-semibold text-primario">Estilo</th>
+              <th className="px-3 py-2 font-semibold text-primario">División</th>
               <th className="px-3 py-2 font-semibold text-primario">Nac.</th>
               <th className="px-3 py-2 font-semibold text-primario">Pago</th>
               <th className="px-3 py-2 font-semibold text-primario">Banquete</th>
@@ -87,6 +93,9 @@ export default async function PaginaArqueros({
                 </td>
                 <td className="px-3 py-2 text-texto/80">
                   {ETIQUETAS_ESTILO[arquero.estilo]}
+                </td>
+                <td className="whitespace-nowrap px-3 py-2 font-semibold text-primario">
+                  {calcularCodigoArquero(arquero)}
                 </td>
                 <td className="whitespace-nowrap px-3 py-2 text-texto/80">
                   {arquero.fechaNacimiento.toLocaleDateString("es-AR", {
@@ -117,7 +126,7 @@ export default async function PaginaArqueros({
             ))}
             {arqueros.length === 0 && (
               <tr>
-                <td colSpan={12} className="px-3 py-6 text-center text-texto/60">
+                <td colSpan={13} className="px-3 py-6 text-center text-texto/60">
                   Todavía no hay arqueros inscriptos.
                 </td>
               </tr>

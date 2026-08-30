@@ -236,10 +236,11 @@ alojamientos al campo de tiro, horarios y costo — *a definir*.
    | ¿Asiste al banquete? | checkbox | — |
    | Acepta reglamento y uso de datos | checkbox | sí |
 
-4. Al enviar: alta con `estadoPago = PENDIENTE`, mail de confirmación con las
-   instrucciones de pago, y pantalla de "gracias" con el resumen.
-5. El número de registro se asigna cuando el admin confirma el alta, no al
-   enviar el formulario.
+4. Al enviar: alta con `pagado = false`, mail de confirmación con las
+   instrucciones de pago (pendiente: falta elegir proveedor de mail, ver
+   `04-PENDIENTES.md`), y pantalla de "gracias" con el resumen.
+5. El número de registro se asigna automáticamente al enviar el formulario
+   (decisión confirmada 2026-08-30; cambia lo que decía antes este punto).
 
 Sugerencia: calcular la división automáticamente a partir de la fecha de
 nacimiento (según la edad al 5/12/2026) y dejar que el arquero la ajuste.

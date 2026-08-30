@@ -221,9 +221,13 @@ model Configuracion {
 }
 ```
 
-**Número de registro:** se asigna al confirmar el alta (no al enviar el
-formulario), con formato `LABHC-2026-NNNN` y NNNN correlativo de 4 dígitos.
-Generarlo dentro de una transacción para evitar duplicados.
+**Número de registro:** se asigna automáticamente al enviar el formulario
+público (decisión confirmada 2026-08-30; el plan original decía "al
+confirmar el alta", ver `docs/02-SITEMAP.md`), con formato
+`LABHC-2026-NNNN`, NNNN correlativo secuencial. Se genera dentro de una
+transacción (`Configuracion.ultimo_numero_registro`, incremento atómico
+con `INSERT ... ON CONFLICT`) para que dos inscripciones simultáneas nunca
+reciban el mismo número.
 
 **Divisiones y estilos IFAA:** confirmado por la organización (2026-08-30, ver
 `docs/04-PENDIENTES.md`). 5 divisiones por edad, sin Young Adult (Cub 8-12,

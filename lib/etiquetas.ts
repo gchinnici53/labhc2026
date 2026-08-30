@@ -1,5 +1,10 @@
 import type { Division, Estilo, Genero } from "@prisma/client";
 
+// Ojo con la terminologia (confirmada por la organizacion): en la UI, el
+// campo por edad (este enum Division en el schema) se muestra como
+// "Categoria". Lo que la UI llama "Division" es el codigo calculado en
+// calcularCodigoArquero() (division + genero + estilo, ej. "AMLB").
+
 export const ETIQUETAS_GENERO: Record<Genero, string> = {
   MASCULINO: "Masculino",
   FEMENINO: "Femenino",

@@ -508,7 +508,8 @@
       "requerido": "Este campo es obligatorio.",
       "email_invalido": "Ingresá un email válido.",
       "debe_aceptar": "Tenés que aceptar el reglamento para continuar.",
-      "division_no_coincide": "Esa categoría no coincide con tu edad al inicio del torneo (5 de diciembre de 2026)."
+      "division_no_coincide": "Esa categoría no coincide con tu edad al inicio del torneo (5 de diciembre de 2026).",
+      "ya_inscripto": "Ya existe una inscripción con ese nombre, apellido y fecha de nacimiento."
     },
     "enviar": "Inscribirme",
     "enviando": "Enviando…",
