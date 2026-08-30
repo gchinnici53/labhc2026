@@ -460,5 +460,61 @@
         }
       }
     }
+  },
+  "inscripcion": {
+    "camposObligatorios": "Todos los campos son obligatorios (salvo el teléfono).",
+    "cerrada": "Las inscripciones todavía no están abiertas.",
+    "seleccionar": "Seleccioná una opción",
+    "campos": {
+      "nombre": "Nombre",
+      "apellido": "Apellido",
+      "email": "Email",
+      "telefono": "Teléfono (opcional)",
+      "federacion": "País / Federación",
+      "fechaNacimiento": "Fecha de nacimiento",
+      "genero": "Género",
+      "division": "Categoría",
+      "estilo": "Estilo",
+      "banquete": "¿Asistís al banquete? (USD 40)",
+      "aceptaReglamento": "Leí y acepto el reglamento del torneo y el uso de mis datos para la organización."
+    },
+    "divisionAyuda": "Según tu fecha de nacimiento, al 5 de diciembre de 2026 te corresponde: {division}",
+    "generoOpciones": {
+      "MASCULINO": "Masculino",
+      "FEMENINO": "Femenino"
+    },
+    "divisionOpciones": {
+      "CUB": "Cub (8 a 12 años)",
+      "JUNIOR": "Junior (13 a 17 años)",
+      "ADULT": "Adulto (18 a 54 años)",
+      "VETERAN": "Veterano (55 a 64 años)",
+      "SENIOR": "Senior (65 años en adelante)"
+    },
+    "estiloOpciones": {
+      "HB": "Arco Histórico (HB)",
+      "LB": "Longbow (LB)",
+      "TR": "Recurvo Tradicional (TR)",
+      "BB_R": "Barebow Recurvo (BBR)",
+      "BH_R": "Bowhunter Recurvo (BHR)",
+      "FS_R": "Freestyle Limited Recurvo (FSR)",
+      "BB_C": "Barebow Compuesto (BBC)",
+      "BH_C": "Bowhunter Compuesto (BHC)",
+      "BL": "Bowhunter Limited (BL)",
+      "BU": "Bowhunter Unlimited (BU)",
+      "FS_C": "Freestyle Limited Compuesto (FSC)",
+      "FU": "Freestyle Unlimited (FU)"
+    },
+    "errores": {
+      "requerido": "Este campo es obligatorio.",
+      "email_invalido": "Ingresá un email válido.",
+      "debe_aceptar": "Tenés que aceptar el reglamento para continuar.",
+      "division_no_coincide": "Esa categoría no coincide con tu edad al inicio del torneo (5 de diciembre de 2026)."
+    },
+    "enviar": "Inscribirme",
+    "enviando": "Enviando…",
+    "gracias": {
+      "titulo": "¡Gracias por inscribirte!",
+      "texto": "Registramos tu inscripción como pendiente de pago. Pronto vas a recibir por email las instrucciones para completarlo."
+    }
   }
 }

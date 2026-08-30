@@ -460,5 +460,61 @@
         }
       }
     }
+  },
+  "inscripcion": {
+    "camposObligatorios": "All fields are required (except phone).",
+    "cerrada": "Registration is not open yet.",
+    "seleccionar": "Select an option",
+    "campos": {
+      "nombre": "First name",
+      "apellido": "Last name",
+      "email": "Email",
+      "telefono": "Phone (optional)",
+      "federacion": "Country / Federation",
+      "fechaNacimiento": "Date of birth",
+      "genero": "Gender",
+      "division": "Category",
+      "estilo": "Style",
+      "banquete": "Attending the banquet? (USD 40)",
+      "aceptaReglamento": "I have read and accept the tournament rules and the use of my data for the organization."
+    },
+    "divisionAyuda": "Based on your date of birth, as of December 5th, 2026 you belong to: {division}",
+    "generoOpciones": {
+      "MASCULINO": "Male",
+      "FEMENINO": "Female"
+    },
+    "divisionOpciones": {
+      "CUB": "Cub (8 to 12)",
+      "JUNIOR": "Junior (13 to 17)",
+      "ADULT": "Adult (18 to 54)",
+      "VETERAN": "Veteran (55 to 64)",
+      "SENIOR": "Senior (65 and up)"
+    },
+    "estiloOpciones": {
+      "HB": "Historical Bow (HB)",
+      "LB": "Longbow (LB)",
+      "TR": "Traditional Recurve (TR)",
+      "BB_R": "Barebow Recurve (BBR)",
+      "BH_R": "Bowhunter Recurve (BHR)",
+      "FS_R": "Freestyle Limited Recurve (FSR)",
+      "BB_C": "Barebow Compound (BBC)",
+      "BH_C": "Bowhunter Compound (BHC)",
+      "BL": "Bowhunter Limited (BL)",
+      "BU": "Bowhunter Unlimited (BU)",
+      "FS_C": "Freestyle Limited Compound (FSC)",
+      "FU": "Freestyle Unlimited (FU)"
+    },
+    "errores": {
+      "requerido": "This field is required.",
+      "email_invalido": "Enter a valid email.",
+      "debe_aceptar": "You need to accept the rules to continue.",
+      "division_no_coincide": "That category doesn't match your age at the start of the tournament (December 5th, 2026)."
+    },
+    "enviar": "Register",
+    "enviando": "Sending…",
+    "gracias": {
+      "titulo": "Thanks for registering!",
+      "texto": "We've recorded your registration as pending payment. You'll soon receive payment instructions by email."
+    }
   }
 }
