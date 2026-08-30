@@ -9,10 +9,11 @@ const PARTNERS = [
   { nombre: "IFAA", archivo: "ifaa.png" },
   { nombre: "TAFISA", archivo: "tafisa.png" },
   { nombre: "Flechar", archivo: "flechar.png" },
-  { nombre: "Liga 3D Metropolitana", archivo: "liga3d.png" },
+  { nombre: "Club Atlético Independiente", archivo: "cai.png" },
 ];
 
 const AUSPICIANTES = [
+  { nombre: "Liga 3D Metropolitana", archivo: "liga3d.png" },
   { nombre: "Zona Vital", archivo: "zonavital.png" },
   { nombre: "Panda Troupe", archivo: "panda.png" },
 ];
