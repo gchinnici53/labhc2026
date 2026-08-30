@@ -355,14 +355,13 @@
       },
       "s6": {
         "titulo": "6. Divisiones por edad",
-        "intro": "La edad se toma al primer día del torneo. La IFAA reconoce estas divisiones:",
+        "intro": "La edad se toma al primer día del torneo. Estas son las divisiones del torneo:",
         "items": [
-          "Cub — menores de 13 años (tiran con un rango de estilos reducido y acompañados por un adulto responsable no tirador).",
-          "Junior — de 13 a 16 años.",
-          "Young Adult (Adulto Joven) — de 17 a 18 años.",
-          "Adulto — 19 años en adelante.",
-          "Veterano — 55 años en adelante (puede optar por competir en Veterano o en Adulto).",
-          "Senior — 65 años en adelante (puede optar por Senior, Veterano o Adulto)."
+          "Cub — de 8 a 12 años (tiran con un rango de estilos reducido y acompañados por un adulto responsable no tirador).",
+          "Junior — de 13 a 17 años.",
+          "Adulto — de 18 a 54 años.",
+          "Veterano — de 55 a 64 años.",
+          "Senior — 65 años en adelante."
         ]
       },
       "s7": {

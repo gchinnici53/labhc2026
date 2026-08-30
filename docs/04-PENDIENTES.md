@@ -54,7 +54,7 @@ visible en el sitio. **No inventar contenido para llenar estos huecos.**
 - [ ] ¿Cloudflare o nameservers de Hostinger? (ver `03-DEPLOY-DOMINIO.md`)
 - [ ] Proveedor de mail para las confirmaciones: Resend, SMTP de Hostinger, otro
 - [ ] Repositorio Git: ¿GitHub privado?
-- [ ] Verificar los enums de división y estilo contra el Archer's Handbook IFAA vigente
+- [x] Verificar los enums de división y estilo contra el Archer's Handbook IFAA vigente — confirmado por la organización (2026-08-30): 5 divisiones sin Young Adult (Cub 8-12, Junior 13-17, Adult 18-54, Veteran 55-64, Senior 65+), estilo sin cambios (12 valores)
 - [ ] ¿Hace falta guardar el número de licencia IFAA de cada arquero?
 - [ ] ¿El sitio necesita política de privacidad? (datos personales de menores de edad en Cub y Junior)
 - [ ] Texto de la página `/reglamento` (nueva, reemplaza a "Resultados" en el nav fijo — ver `02-SITEMAP.md`)

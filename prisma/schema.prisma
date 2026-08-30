@@ -18,11 +18,11 @@ enum Genero {
   FEMENINO
 }
 
-// IFAA — ver docs/ y el reglamento del torneo (incluye Senior, 65+)
+// Categorias por edad del torneo (confirmadas por la organizacion):
+// CUB 8-12, JUNIOR 13-17, ADULT 18-54, VETERAN 55-64, SENIOR 65+
 enum Division {
   CUB
   JUNIOR
-  YOUNG_ADULT
   ADULT
   VETERAN
   SENIOR

@@ -355,14 +355,13 @@
       },
       "s6": {
         "titulo": "6. Age divisions",
-        "intro": "Age is taken as of the first day of the tournament. The IFAA recognizes these divisions:",
+        "intro": "Age is taken as of the first day of the tournament. These are the tournament's divisions:",
         "items": [
-          "Cub — under 13 (shoot with a reduced range of styles and accompanied by a non-shooting responsible adult).",
-          "Junior — 13 to 16.",
-          "Young Adult — 17 to 18.",
-          "Adult — 19 and up.",
-          "Veteran — 55 and up (may choose to compete as Veteran or Adult).",
-          "Senior — 65 and up (may choose Senior, Veteran, or Adult)."
+          "Cub — 8 to 12 (shoot with a reduced range of styles and accompanied by a non-shooting responsible adult).",
+          "Junior — 13 to 17.",
+          "Adult — 18 to 54.",
+          "Veteran — 55 to 64.",
+          "Senior — 65 and up."
         ]
       },
       "s7": {

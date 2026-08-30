@@ -120,7 +120,7 @@ que crea un `Arquero` en estado pendiente.
 ```prisma
 enum Rol          { ADMIN CARGA INVITADO }
 enum Genero       { MASCULINO FEMENINO }
-enum Division     { CUB JUNIOR YOUNG_ADULT ADULT VETERAN SENIOR } // IFAA
+enum Division     { CUB JUNIOR ADULT VETERAN SENIOR } // CUB 8-12, JUNIOR 13-17, ADULT 18-54, VETERAN 55-64, SENIOR 65+
 enum Estilo       { BB_R BB_C FS_R FS_C FU BH_R BH_C BL BU LB HB TR } // IFAA
 enum Ronda        { ANIMAL STANDARD HUNTING }
 enum NivelSponsor { PRINCIPAL PARTNER APOYO }
@@ -225,9 +225,10 @@ model Configuracion {
 formulario), con formato `LABHC-2026-NNNN` y NNNN correlativo de 4 dígitos.
 Generarlo dentro de una transacción para evitar duplicados.
 
-**Divisiones y estilos IFAA:** los enums siguen el Archer's Handbook. Antes de
-la etapa 4, verificar contra la edición vigente del handbook y contra lo que
-pida la organización del torneo.
+**Divisiones y estilos IFAA:** confirmado por la organización (2026-08-30, ver
+`docs/04-PENDIENTES.md`). 5 divisiones por edad, sin Young Adult (Cub 8-12,
+Junior 13-17, Adult 18-54, Veteran 55-64, Senior 65+). Estilo sin cambios
+respecto al Archer's Handbook (12 valores).
 
 ---
 

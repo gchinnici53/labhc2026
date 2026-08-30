@@ -5,10 +5,11 @@ export const ETIQUETAS_GENERO: Record<Genero, string> = {
   FEMENINO: "Femenino",
 };
 
+// Categorias confirmadas por la organizacion: CUB 8-12, JUNIOR 13-17,
+// ADULT 18-54, VETERAN 55-64, SENIOR 65+
 export const ETIQUETAS_DIVISION: Record<Division, string> = {
   CUB: "Cub",
   JUNIOR: "Junior",
-  YOUNG_ADULT: "Young Adult",
   ADULT: "Adulto",
   VETERAN: "Veterano",
   SENIOR: "Senior",
@@ -29,3 +30,30 @@ export const ETIQUETAS_ESTILO: Record<Estilo, string> = {
   BL: "Bowhunter Limited (BL)",
   BU: "Bowhunter Unlimited (BU)",
 };
+
+const INICIAL_DIVISION: Record<Division, string> = {
+  CUB: "C",
+  JUNIOR: "J",
+  ADULT: "A",
+  VETERAN: "V",
+  SENIOR: "S",
+};
+
+const INICIAL_GENERO: Record<Genero, string> = {
+  MASCULINO: "M",
+  FEMENINO: "F",
+};
+
+// Codigo de tarjeta: division + genero + estilo (sin guion bajo).
+// Ejemplo: Adulto, Masculino, Longbow (LB) -> "AMLB"
+export function calcularCodigoArquero({
+  division,
+  genero,
+  estilo,
+}: {
+  division: Division;
+  genero: Genero;
+  estilo: Estilo;
+}): string {
+  return `${INICIAL_DIVISION[division]}${INICIAL_GENERO[genero]}${estilo.replace("_", "")}`;
+}
