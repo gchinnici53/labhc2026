@@ -69,8 +69,9 @@ app/
   [locale]/
     (public)/          # home, acerca, competicion, resultados, registrados,
                        # alojamiento, inscripcion
-    (admin)/admin/     # panel protegido
     layout.tsx
+  admin/               # panel protegido, sin i18n (layout raiz propio,
+                       # fuera de [locale] — ver docs/02-SITEMAP.md)
   api/
 components/
   ui/                  # botones, inputs, card, tabla — genéricos
@@ -78,7 +79,10 @@ components/
   admin/
 lib/
   prisma.ts
-  auth.ts
+  auth.ts            # config completa de Auth.js (con el provider de Credentials)
+  auth.config.ts     # config edge-safe, sin Prisma/bcrypt (la usa el middleware)
+  permisos.ts        # requiereRol(...) para las Server Actions
+  etiquetas.ts        # labels legibles de los enums (Division, Estilo, Genero)
   validaciones/        # esquemas Zod
   utils/
 messages/
@@ -116,9 +120,8 @@ que crea un `Arquero` en estado pendiente.
 ```prisma
 enum Rol          { ADMIN CARGA INVITADO }
 enum Genero       { MASCULINO FEMENINO }
-enum Division     { CUB JUNIOR YOUNG_ADULT ADULT VETERAN }        // IFAA
+enum Division     { CUB JUNIOR YOUNG_ADULT ADULT VETERAN SENIOR } // IFAA
 enum Estilo       { BB_R BB_C FS_R FS_C FU BH_R BH_C BL BU LB HB TR } // IFAA
-enum EstadoPago   { PENDIENTE PARCIAL PAGADO }
 enum Ronda        { ANIMAL STANDARD HUNTING }
 enum NivelSponsor { PRINCIPAL PARTNER APOYO }
 
@@ -134,26 +137,26 @@ model Usuario {
 }
 
 model Arquero {
-  id              String     @id @default(cuid())
-  numeroRegistro  String     @unique            // LABHC-2026-0001, correlativo
+  id              String   @id @default(cuid())
+  numeroRegistro  String?  @unique            // LABHC-2026-0001, asignado al confirmar el alta
   nombre          String
   apellido        String
   genero          Genero
-  fechaNacimiento DateTime   @db.Date
-  pais            String                        // ISO-3166 alpha-2
-  federacion      String                        // texto libre
+  fechaNacimiento DateTime @db.Date
+  pais            String                      // ISO-3166 alpha-2
+  federacion      String                      // texto libre
   division        Division
   estilo          Estilo
   email           String
   telefono        String?
-  banquete        Boolean    @default(false)    // USD 40
-  estadoPago      EstadoPago @default(PENDIENTE)
-  montoPagado     Decimal?   @db.Decimal(10,2)
+  banquete        Boolean  @default(false)    // quiere banquete (USD 40)
+  banquetePagado  Boolean  @default(false)    // confirmacion de pago del banquete
+  pagado          Boolean  @default(false)    // confirmacion de pago de la inscripcion (USD 150)
   comprobanteUrl  String?
   notas           String?
-  publicado       Boolean    @default(true)     // aparece en /registrados
-  creadoEn        DateTime   @default(now())
-  actualizadoEn   DateTime   @updatedAt
+  publicado       Boolean  @default(true)     // aparece en /registrados
+  creadoEn        DateTime @default(now())
+  actualizadoEn   DateTime @updatedAt
   grupos          ArqueroGrupo[]
   resultados      Resultado[]
 }
@@ -255,7 +258,7 @@ Trabajar de a una etapa. No empezar la siguiente sin que la anterior corra.
       grilla de partners, footer completo.
 - [x] **Etapa 3 — Contenido estático:** Acerca de, Competición (programa, mapa,
       precios, formas de pago), Alojamiento.
-- [ ] **Etapa 4 — Base de datos y auth:** Prisma + PostgreSQL, migraciones,
+- [x] **Etapa 4 — Base de datos y auth:** Prisma + PostgreSQL, migraciones,
       seed, Auth.js con los 3 roles, middleware que protege `/admin`.
 - [ ] **Etapa 5 — Panel admin:** ABM de arqueros, sponsors, alojamientos,
       usuarios y configuración. Exportación de arqueros a CSV.

@@ -1,0 +1,155 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Rol {
+  ADMIN
+  CARGA
+  INVITADO
+}
+
+enum Genero {
+  MASCULINO
+  FEMENINO
+}
+
+// IFAA — ver docs/ y el reglamento del torneo (incluye Senior, 65+)
+enum Division {
+  CUB
+  JUNIOR
+  YOUNG_ADULT
+  ADULT
+  VETERAN
+  SENIOR
+}
+
+// IFAA — 12 estilos (recurvo y compuesto compiten por separado)
+enum Estilo {
+  BB_R
+  BB_C
+  FS_R
+  FS_C
+  FU
+  BH_R
+  BH_C
+  BL
+  BU
+  LB
+  HB
+  TR
+}
+
+enum Ronda {
+  ANIMAL
+  STANDARD
+  HUNTING
+}
+
+enum NivelSponsor {
+  PRINCIPAL
+  PARTNER
+  APOYO
+}
+
+model Usuario {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  nombre        String
+  passwordHash  String
+  rol           Rol      @default(INVITADO)
+  activo        Boolean  @default(true)
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+}
+
+model Arquero {
+  id              String   @id @default(cuid())
+  numeroRegistro  String?  @unique // LABHC-2026-0001, asignado al confirmar el alta
+  nombre          String
+  apellido        String
+  genero          Genero
+  fechaNacimiento DateTime @db.Date
+  pais            String // ISO-3166 alpha-2
+  federacion      String // texto libre
+  division        Division
+  estilo          Estilo
+  email           String
+  telefono        String?
+  banquete        Boolean  @default(false) // quiere banquete (USD 40)
+  banquetePagado  Boolean  @default(false) // confirmacion de pago del banquete
+  pagado          Boolean  @default(false) // confirmacion de pago de la inscripcion (USD 150)
+  comprobanteUrl  String?
+  notas           String?
+  publicado       Boolean  @default(true) // aparece en /registrados
+  creadoEn        DateTime @default(now())
+  actualizadoEn   DateTime @updatedAt
+  grupos          ArqueroGrupo[]
+  resultados      Resultado[]
+}
+
+model Grupo {
+  id            String @id @default(cuid())
+  nombre        String // "Grupo 1"
+  ronda         Ronda
+  blancoInicial Int? // estaca de largada
+  integrantes   ArqueroGrupo[]
+
+  @@unique([nombre, ronda])
+}
+
+model ArqueroGrupo {
+  arqueroId String
+  grupoId   String
+  arquero   Arquero @relation(fields: [arqueroId], references: [id], onDelete: Cascade)
+  grupo     Grupo   @relation(fields: [grupoId], references: [id], onDelete: Cascade)
+
+  @@id([arqueroId, grupoId])
+}
+
+model Resultado {
+  id         String  @id @default(cuid())
+  arqueroId  String
+  ronda      Ronda
+  puntaje    Int
+  dieces     Int? // criterio de desempate
+  cargadoPor String?
+  arquero    Arquero @relation(fields: [arqueroId], references: [id], onDelete: Cascade)
+
+  @@unique([arqueroId, ronda])
+}
+
+model Sponsor {
+  id       String       @id @default(cuid())
+  nombre   String
+  logoUrl  String
+  sitioWeb String?
+  nivel    NivelSponsor @default(PARTNER)
+  orden    Int          @default(0)
+  activo   Boolean      @default(true)
+}
+
+model Alojamiento {
+  id             String   @id @default(cuid())
+  nombre         String
+  descripcionEs  String
+  descripcionEn  String
+  imagenUrl      String
+  precioSugerido Decimal? @db.Decimal(10, 2)
+  moneda         String   @default("USD")
+  distanciaKm    Decimal? @db.Decimal(5, 1)
+  tieneTransfer  Boolean  @default(false)
+  sitioWeb       String?
+  telefono       String?
+  orden          Int      @default(0)
+  activo         Boolean  @default(true)
+}
+
+model Configuracion {
+  clave String @id // "inscripcion_abierta", "email_contacto", "precio_*"
+  valor String
+}
