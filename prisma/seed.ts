@@ -157,7 +157,12 @@ async function main() {
   await seedSponsors();
   await seedAlojamientos();
   await seedConfiguracion();
-  await seedArquerosDePrueba();
+
+  // Los arqueros de prueba son datos ficticios para probar el listado
+  // localmente: nunca deben cargarse en produccion.
+  if (process.env.NODE_ENV !== "production") {
+    await seedArquerosDePrueba();
+  }
 
   console.log("Seed listo.");
   console.log(`Usuario admin: admin@labhc2026.ar / ${PASSWORD_ADMIN_SEED}`);
