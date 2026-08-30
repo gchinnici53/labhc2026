@@ -67,7 +67,7 @@ async function seedConfiguracion() {
     { clave: "precio_inscripcion", valor: "150" },
     { clave: "precio_banquete", valor: "40" },
     { clave: "email_contacto", valor: "" },
-    // Correlativo del numero de registro (LABHC-2026-NNNN). Se incrementa
+    // Correlativo del numero de registro (LABHC-NNNN). Se incrementa
     // atomicamente en app/[locale]/(public)/inscripcion/acciones.ts.
     { clave: "ultimo_numero_registro", valor: "0" },
   ];
@@ -86,7 +86,7 @@ async function seedConfiguracion() {
 async function seedArquerosDePrueba() {
   const arqueros = [
     {
-      numeroRegistro: "LABHC-2026-0001",
+      numeroRegistro: "LABHC-0001",
       nombre: "Juan",
       apellido: "Alvarez",
       genero: "MASCULINO" as const,
@@ -101,7 +101,7 @@ async function seedArquerosDePrueba() {
       banquetePagado: true,
     },
     {
-      numeroRegistro: "LABHC-2026-0002",
+      numeroRegistro: "LABHC-0002",
       nombre: "Maria",
       apellido: "Benitez",
       genero: "FEMENINO" as const,
@@ -116,7 +116,7 @@ async function seedArquerosDePrueba() {
       banquetePagado: false,
     },
     {
-      numeroRegistro: "LABHC-2026-0003",
+      numeroRegistro: "LABHC-0003",
       nombre: "Carlos",
       apellido: "Zabala",
       genero: "MASCULINO" as const,

@@ -22,7 +22,7 @@ async function generarNumeroRegistro(tx: Prisma.TransactionClient): Promise<stri
     RETURNING valor
   `;
   const numero = filas[0]?.valor ?? "1";
-  return `LABHC-2026-${numero.padStart(4, "0")}`;
+  return `LABHC-${numero.padStart(4, "0")}`;
 }
 
 export async function inscribirArquero(

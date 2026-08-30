@@ -4,7 +4,7 @@ import type { Division, Estilo, Genero } from "@prisma/client";
 // Solo tipos de @prisma/client (se borran en compilacion): este archivo se
 // importa tambien desde un componente de cliente (para calcular la
 // categoria en vivo) y @prisma/client no es seguro para el navegador.
-const GENEROS = ["MASCULINO", "FEMENINO"] as const satisfies readonly Genero[];
+export const GENEROS = ["MASCULINO", "FEMENINO"] as const satisfies readonly Genero[];
 
 // Orden pedido por la organizacion para el desplegable.
 export const DIVISIONES_ORDENADAS = [

@@ -138,7 +138,7 @@ model Usuario {
 
 model Arquero {
   id              String   @id @default(cuid())
-  numeroRegistro  String?  @unique            // LABHC-2026-0001, asignado al confirmar el alta
+  numeroRegistro  String?  @unique            // LABHC-0001, asignado automaticamente al inscribirse
   nombre          String
   apellido        String
   genero          Genero
@@ -224,7 +224,7 @@ model Configuracion {
 **Número de registro:** se asigna automáticamente al enviar el formulario
 público (decisión confirmada 2026-08-30; el plan original decía "al
 confirmar el alta", ver `docs/02-SITEMAP.md`), con formato
-`LABHC-2026-NNNN`, NNNN correlativo secuencial. Se genera dentro de una
+`LABHC-NNNN`, NNNN correlativo secuencial. Se genera dentro de una
 transacción (`Configuracion.ultimo_numero_registro`, incremento atómico
 con `INSERT ... ON CONFLICT`) para que dos inscripciones simultáneas nunca
 reciban el mismo número.

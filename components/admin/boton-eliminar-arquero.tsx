@@ -12,14 +12,16 @@ export function BotonEliminarArquero({
   return (
     <button
       type="button"
+      title={`Eliminar a ${nombreCompleto}`}
+      aria-label={`Eliminar a ${nombreCompleto}`}
       onClick={() => {
         if (window.confirm(`¿Eliminar a ${nombreCompleto}? Esta acción no se puede deshacer.`)) {
           eliminarArquero(id);
         }
       }}
-      className="text-sm font-semibold text-acento hover:underline"
+      className="flex h-6 w-6 items-center justify-center rounded font-bold text-acento hover:bg-acento/10"
     >
-      Eliminar
+      ×
     </button>
   );
 }

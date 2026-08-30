@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { PanelAdmin } from "@/components/admin/panel-admin";
 import { BotonEliminarArquero } from "@/components/admin/boton-eliminar-arquero";
+import { CheckboxEditable } from "@/components/admin/checkbox-editable";
+import { marcarBanquetePagado, marcarPagado } from "@/app/admin/arqueros/acciones";
 import { prisma } from "@/lib/prisma";
 import {
   calcularCodigoArquero,
@@ -103,24 +105,35 @@ export default async function PaginaArqueros({
                   })}
                 </td>
                 <td className="px-3 py-2">
-                  {arquero.pagado ? (
-                    <span className="font-semibold text-primario">Pagado</span>
-                  ) : (
-                    <span className="font-semibold text-acento">Pendiente</span>
-                  )}
-                </td>
-                <td className="px-3 py-2 text-texto/80">
-                  {arquero.banquete
-                    ? arquero.banquetePagado
-                      ? "Confirmado"
-                      : "Pendiente"
-                    : "—"}
+                  <CheckboxEditable
+                    id={arquero.id}
+                    marcadoInicial={arquero.pagado}
+                    accion={marcarPagado}
+                  />
                 </td>
                 <td className="px-3 py-2">
-                  <BotonEliminarArquero
+                  <CheckboxEditable
                     id={arquero.id}
-                    nombreCompleto={`${arquero.nombre} ${arquero.apellido}`}
+                    marcadoInicial={arquero.banquetePagado}
+                    accion={marcarBanquetePagado}
+                    deshabilitado={!arquero.banquete}
                   />
+                </td>
+                <td className="px-3 py-2">
+                  <div className="flex items-center gap-3">
+                    <Link
+                      href={`/admin/arqueros/${arquero.id}/editar`}
+                      title={`Editar a ${arquero.nombre} ${arquero.apellido}`}
+                      aria-label={`Editar a ${arquero.nombre} ${arquero.apellido}`}
+                      className="flex h-6 w-6 items-center justify-center rounded text-primario hover:bg-primario/10"
+                    >
+                      ✎
+                    </Link>
+                    <BotonEliminarArquero
+                      id={arquero.id}
+                      nombreCompleto={`${arquero.nombre} ${arquero.apellido}`}
+                    />
+                  </div>
                 </td>
               </tr>
             ))}

@@ -69,7 +69,7 @@ model Usuario {
 
 model Arquero {
   id              String   @id @default(cuid())
-  numeroRegistro  String?  @unique // LABHC-2026-0001, asignado automaticamente al inscribirse
+  numeroRegistro  String?  @unique // LABHC-0001, asignado automaticamente al inscribirse
   nombre          String
   apellido        String
   genero          Genero
