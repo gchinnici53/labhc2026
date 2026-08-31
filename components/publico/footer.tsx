@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Pathname } from "@/i18n/routing";
 import { Logo } from "@/components/ui/logo";
+import { REDES_SOCIALES } from "@/lib/redes-sociales";
 
 const ENLACES: { href: Pathname; clave: string }[] = [
   { href: "/", clave: "inicio" },
@@ -12,12 +13,6 @@ const ENLACES: { href: Pathname; clave: string }[] = [
   { href: "/alojamiento", clave: "alojamiento" },
   { href: "/inscripcion", clave: "inscripcion" },
 ];
-
-const REDES_SOCIALES = [
-  { nombre: "Instagram", href: "https://www.instagram.com/labhc2026?igsi=MWZoN3ZzeWI2bmx3ZQ%3D%3D&utm_source=qr" },
-  { nombre: "Facebook", href: "https://www.facebook.com/share/1Can9yinyq/?mibextid=wwXIfr" },
-  { nombre: "WhatsApp", href: "https://chat.whatsapp.com/BHICVC7hBmB3oMFleFU2O9?s=sw&p=i&mlu=4" },
-] as const;
 
 export function Footer() {
   const t = useTranslations("footer");
