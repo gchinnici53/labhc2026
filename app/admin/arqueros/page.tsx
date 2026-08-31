@@ -73,7 +73,8 @@ export default async function PaginaArqueros({
               <th className="px-3 py-2 font-semibold text-primario">División</th>
               <th className="px-3 py-2 font-semibold text-primario">Nac.</th>
               <th className="px-3 py-2 font-semibold text-primario">Pago</th>
-              <th className="px-3 py-2 font-semibold text-primario">Banquete</th>
+              <th className="px-3 py-2 font-semibold text-primario">Pidió banquete</th>
+              <th className="px-3 py-2 font-semibold text-primario">Banquete pagado</th>
               <th className="px-3 py-2" />
             </tr>
           </thead>
@@ -111,6 +112,9 @@ export default async function PaginaArqueros({
                     accion={marcarPagado}
                   />
                 </td>
+                <td className="px-3 py-2 text-center">
+                  {arquero.banquete ? "✔" : "—"}
+                </td>
                 <td className="px-3 py-2">
                   <CheckboxEditable
                     id={arquero.id}
@@ -139,7 +143,7 @@ export default async function PaginaArqueros({
             ))}
             {arqueros.length === 0 && (
               <tr>
-                <td colSpan={13} className="px-3 py-6 text-center text-texto/60">
+                <td colSpan={14} className="px-3 py-6 text-center text-texto/60">
                   Todavía no hay arqueros inscriptos.
                 </td>
               </tr>
