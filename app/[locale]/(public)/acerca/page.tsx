@@ -19,7 +19,7 @@ export default function PaginaAcerca() {
       <section className="mt-16">
         <div className="flex flex-wrap items-center justify-center gap-6 rounded-lg border border-primario/10 bg-white p-6">
           <Image src="/logos/flechar.png" alt="Flechar" width={120} height={157} className="h-20 w-auto object-contain" />
-          <Image src="/logos/liga3d.png" alt="Liga 3D Metropolitana" width={140} height={140} className="h-20 w-auto object-contain" />
+          <Image src="/logos/cai.png" alt="CAI" width={140} height={140} className="h-20 w-auto object-contain" />
         </div>
         <h2 className="mt-8 text-center font-display text-2xl uppercase tracking-wide text-primario">
           {t("bloque1.titulo")}

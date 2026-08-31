@@ -19,7 +19,6 @@
     "descripcion": "Latin American 3D archery championship under IFAA rules.",
     "columnaSitio": "Site",
     "columnaContacto": "Contact",
-    "emailPlaceholder": "Contact email (TBD)",
     "columnaSede": "Venue and dates",
     "sede": "Panda Troupe, Olivera, Buenos Aires, Argentina",
     "fechas": "December 5th to 8th, 2026",
@@ -40,9 +39,7 @@
   "home": {
     "hero": {
       "fechas": "December 5th to 8th, 2026",
-      "sede": "Panda Troupe, Olivera, Buenos Aires, Argentina",
-      "cta1": "CTA 1 (TBD)",
-      "cta2": "CTA 2 (TBD)"
+      "sede": "Panda Troupe, Olivera, Buenos Aires, Argentina"
     },
     "cuentaRegresiva": {
       "titulo": "Time left until the tournament",
@@ -175,7 +172,9 @@
     "precios": {
       "titulo": "Prices",
       "inscripcion": "Archer registration",
-      "banquete": "Banquet"
+      "inscripcionAyuda": "Through {fecha}. After that, USD {precio}.",
+      "banquete": "Banquet",
+      "escudo": "Style patch"
     },
     "formasDePago": {
       "titulo": "Payment methods",
@@ -477,7 +476,7 @@
       "genero": "Gender",
       "division": "Category",
       "estilo": "Style",
-      "banquete": "Attending the banquet? (USD 40)",
+      "banquete": "Attending the banquet? (USD 35)",
       "aceptaReglamento": "I have read and accept the tournament rules and the use of my data for the organization."
     },
     "federacionOpciones": {

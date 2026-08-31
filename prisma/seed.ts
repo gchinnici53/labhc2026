@@ -65,8 +65,8 @@ async function seedConfiguracion() {
   const config = [
     { clave: "inscripcion_abierta", valor: "true" },
     { clave: "precio_inscripcion", valor: "150" },
-    { clave: "precio_banquete", valor: "40" },
-    { clave: "email_contacto", valor: "" },
+    { clave: "precio_banquete", valor: "35" },
+    { clave: "email_contacto", valor: "labhc2026@gmail.com" },
     // Correlativo del numero de registro (LABHC-NNNN). Se incrementa
     // atomicamente en app/[locale]/(public)/inscripcion/acciones.ts.
     { clave: "ultimo_numero_registro", valor: "0" },

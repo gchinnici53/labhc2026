@@ -19,7 +19,6 @@
     "descripcion": "Campeonato Latinoamericano de tiro con arco 3D bajo reglamento IFAA.",
     "columnaSitio": "Sitio",
     "columnaContacto": "Contacto",
-    "emailPlaceholder": "Email de contacto (a definir)",
     "columnaSede": "Sede y fechas",
     "sede": "Panda Troupe, Olivera, Buenos Aires, Argentina",
     "fechas": "5 al 8 de diciembre de 2026",
@@ -40,9 +39,7 @@
   "home": {
     "hero": {
       "fechas": "5 al 8 de diciembre de 2026",
-      "sede": "Panda Troupe, Olivera, Buenos Aires, Argentina",
-      "cta1": "CTA 1 (a definir)",
-      "cta2": "CTA 2 (a definir)"
+      "sede": "Panda Troupe, Olivera, Buenos Aires, Argentina"
     },
     "cuentaRegresiva": {
       "titulo": "Faltan para el torneo",
@@ -175,7 +172,9 @@
     "precios": {
       "titulo": "Precios",
       "inscripcion": "Inscripción de tirador",
-      "banquete": "Banquete"
+      "inscripcionAyuda": "Hasta el {fecha}. Después, USD {precio}.",
+      "banquete": "Banquete",
+      "escudo": "Escudo de estilo"
     },
     "formasDePago": {
       "titulo": "Formas de pago",
@@ -477,7 +476,7 @@
       "genero": "Género",
       "division": "Categoría",
       "estilo": "Estilo",
-      "banquete": "¿Asistís al banquete? (USD 40)",
+      "banquete": "¿Asistís al banquete? (USD 35)",
       "aceptaReglamento": "Leí y acepto el reglamento del torneo y el uso de mis datos para la organización."
     },
     "federacionOpciones": {

@@ -249,8 +249,13 @@ respecto al Archer's Handbook (12 valores).
    registro) y filtros desplegables de federación/género/estilo/división que
    solo listan los valores presentes entre los inscriptos (decisión
    confirmada 2026-08-31).
-4. Precios: inscripción USD 150, banquete USD 40. Van en `Configuracion`, no
-   hardcodeados.
+4. Precios (actualizado 2026-08-31): inscripción USD 150 hasta el 05/10/2026,
+   USD 175 después; banquete USD 35; escudo de estilo USD 30. `Configuracion`
+   solo guarda `precio_inscripcion` y `precio_banquete` como valores planos
+   (sin tramos por fecha todavía — los usa el dashboard de `/admin` para
+   calcular lo recaudado) y `/competicion` los muestra hardcodeados en
+   `page.tsx`; ninguna de las dos fuentes es la autoridad real, así que un
+   cambio de precio hay que aplicarlo en ambos lados a mano.
 5. Todo lo marcado como "a definir" en `docs/04-PENDIENTES.md` se implementa
    con un placeholder visible y editable desde el panel. Nunca inventar textos,
    nombres, precios ni datos de contacto.

@@ -53,15 +53,6 @@ export function HeroCarousel() {
         </h1>
         <p className="mt-4 text-lg font-semibold text-fondo drop-shadow-md">{t("fechas")}</p>
         <p className="mt-1 text-base text-fondo/90 drop-shadow-md">{t("sede")}</p>
-
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <span className="rounded-md border border-dashed border-fondo/50 px-5 py-2.5 font-sans text-sm font-semibold uppercase tracking-wide text-fondo/70">
-            {t("cta1")}
-          </span>
-          <span className="rounded-md border border-dashed border-fondo/50 px-5 py-2.5 font-sans text-sm font-semibold uppercase tracking-wide text-fondo/70">
-            {t("cta2")}
-          </span>
-        </div>
       </div>
 
       <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">

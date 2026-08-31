@@ -4,6 +4,8 @@ import type { Pathname } from "@/i18n/routing";
 import { Logo } from "@/components/ui/logo";
 import { REDES_SOCIALES } from "@/lib/redes-sociales";
 
+const EMAIL_CONTACTO = "labhc2026@gmail.com";
+
 const ENLACES: { href: Pathname; clave: string }[] = [
   { href: "/", clave: "inicio" },
   { href: "/acerca", clave: "acerca" },
@@ -47,7 +49,11 @@ export function Footer() {
             {t("columnaContacto")}
           </h2>
           <ul className="flex flex-col gap-1 text-sm text-fondo/80">
-            <li className="italic">{t("emailPlaceholder")}</li>
+            <li>
+              <a href={`mailto:${EMAIL_CONTACTO}`} className="hover:text-fondo">
+                {EMAIL_CONTACTO}
+              </a>
+            </li>
             {REDES_SOCIALES.map((red) => (
               <li key={red.nombre}>
                 <a

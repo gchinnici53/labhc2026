@@ -2,8 +2,11 @@ import { useTranslations } from "next-intl";
 import { ProgramaCompeticion } from "@/components/publico/programa-competicion";
 
 // Precios temporales: pasan a la tabla Configuracion en la Etapa 4/5.
-const PRECIO_INSCRIPCION_USD = 150;
-const PRECIO_BANQUETE_USD = 40;
+const PRECIO_INSCRIPCION_TEMPRANA_USD = 150;
+const PRECIO_INSCRIPCION_TARDIA_USD = 175;
+const FECHA_CORTE_INSCRIPCION = "05/10/2026";
+const PRECIO_BANQUETE_USD = 35;
+const PRECIO_ESCUDO_USD = 30;
 
 export default function PaginaCompeticion() {
   const tPagina = useTranslations("paginas.competicion");
@@ -93,13 +96,27 @@ export default function PaginaCompeticion() {
           {tPrecios("titulo")}
         </h2>
         <dl className="mt-4 divide-y divide-primario/10 rounded-lg border border-primario/10">
-          <div className="flex items-center justify-between px-4 py-3">
-            <dt className="text-texto/80">{tPrecios("inscripcion")}</dt>
-            <dd className="font-display text-lg text-primario">USD {PRECIO_INSCRIPCION_USD}</dd>
+          <div className="px-4 py-3">
+            <div className="flex items-center justify-between">
+              <dt className="text-texto/80">{tPrecios("inscripcion")}</dt>
+              <dd className="font-display text-lg text-primario">
+                USD {PRECIO_INSCRIPCION_TEMPRANA_USD}
+              </dd>
+            </div>
+            <p className="mt-1 text-xs text-texto/60">
+              {tPrecios("inscripcionAyuda", {
+                fecha: FECHA_CORTE_INSCRIPCION,
+                precio: PRECIO_INSCRIPCION_TARDIA_USD,
+              })}
+            </p>
           </div>
           <div className="flex items-center justify-between px-4 py-3">
             <dt className="text-texto/80">{tPrecios("banquete")}</dt>
             <dd className="font-display text-lg text-primario">USD {PRECIO_BANQUETE_USD}</dd>
+          </div>
+          <div className="flex items-center justify-between px-4 py-3">
+            <dt className="text-texto/80">{tPrecios("escudo")}</dt>
+            <dd className="font-display text-lg text-primario">USD {PRECIO_ESCUDO_USD}</dd>
           </div>
         </dl>
       </section>

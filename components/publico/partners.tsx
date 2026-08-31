@@ -3,11 +3,13 @@ import { useTranslations } from "next-intl";
 
 // Arrays temporales: en la Etapa 5 esto pasa a la tabla Sponsor (ordenada por
 // nivel y orden).
+// Orden pedido por la organizacion: fila 1 IFAA/Family/TAFISA, fila 2
+// AATA/Flechar/CAI (ver GrillaLogos, que fuerza 3 columnas desde sm).
 const PARTNERS = [
-  { nombre: "AATA", archivo: "AATA.png" },
-  { nombre: "IFAA Family of Archers", archivo: "family.png" },
   { nombre: "IFAA", archivo: "ifaa.png" },
+  { nombre: "IFAA Family of Archers", archivo: "family.png" },
   { nombre: "TAFISA", archivo: "tafisa.png" },
+  { nombre: "AATA", archivo: "AATA.png" },
   { nombre: "Flechar", archivo: "flechar.png" },
   { nombre: "Club Atlético Independiente", archivo: "cai.png" },
 ];
@@ -20,7 +22,7 @@ const AUSPICIANTES = [
 
 function GrillaLogos({ items }: { items: { nombre: string; archivo: string }[] }) {
   return (
-    <div className="mt-8 flex flex-wrap items-center justify-center gap-8">
+    <div className="mt-8 grid grid-cols-2 place-items-center gap-8 sm:grid-cols-3">
       {items.map((item) => (
         <div
           key={item.nombre}

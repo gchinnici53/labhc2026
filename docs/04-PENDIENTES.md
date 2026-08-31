@@ -23,7 +23,7 @@ visible en el sitio. **No inventar contenido para llenar estos huecos.**
 - [ ] Texto resumido sobre la IFAA
 - [ ] Logos de IFAA, TAFISA y Zona Vital en alta resolución + a qué sitio enlaza cada uno
 - [ ] Lista final de partners y auspiciantes
-- [ ] Mail de contacto oficial (¿`info@labhc2026.ar`?)
+- [x] Mail de contacto oficial: `labhc2026@gmail.com` (2026-08-31).
 - [x] Redes sociales del torneo — Instagram, Facebook y grupo de WhatsApp
       cargados en el footer (2026-08-31).
 - [ ] Fotos y datos de los 2 o 3 alojamientos sugeridos
