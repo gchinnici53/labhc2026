@@ -24,7 +24,8 @@ visible en el sitio. **No inventar contenido para llenar estos huecos.**
 - [ ] Logos de IFAA, TAFISA y Zona Vital en alta resolución + a qué sitio enlaza cada uno
 - [ ] Lista final de partners y auspiciantes
 - [ ] Mail de contacto oficial (¿`info@labhc2026.ar`?)
-- [ ] Redes sociales del torneo, si van a existir
+- [x] Redes sociales del torneo — Instagram, Facebook y grupo de WhatsApp
+      cargados en el footer (2026-08-31).
 - [ ] Fotos y datos de los 2 o 3 alojamientos sugeridos
 - [ ] Descripción, horarios y costo del transfer al campo de tiro
 

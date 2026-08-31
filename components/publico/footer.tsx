@@ -13,6 +13,12 @@ const ENLACES: { href: Pathname; clave: string }[] = [
   { href: "/inscripcion", clave: "inscripcion" },
 ];
 
+const REDES_SOCIALES = [
+  { nombre: "Instagram", href: "https://www.instagram.com/labhc2026?igsi=MWZoN3ZzeWI2bmx3ZQ%3D%3D&utm_source=qr" },
+  { nombre: "Facebook", href: "https://www.facebook.com/share/1Can9yinyq/?mibextid=wwXIfr" },
+  { nombre: "WhatsApp", href: "https://chat.whatsapp.com/BHICVC7hBmB3oMFleFU2O9?s=sw&p=i&mlu=4" },
+] as const;
+
 export function Footer() {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
@@ -47,7 +53,18 @@ export function Footer() {
           </h2>
           <ul className="flex flex-col gap-1 text-sm text-fondo/80">
             <li className="italic">{t("emailPlaceholder")}</li>
-            <li className="italic">{t("redesPlaceholder")}</li>
+            {REDES_SOCIALES.map((red) => (
+              <li key={red.nombre}>
+                <a
+                  href={red.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-fondo"
+                >
+                  {red.nombre}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
