@@ -17,9 +17,9 @@ visible en el sitio. **No inventar contenido para llenar estos huecos.**
 - [ ] Nombre oficial completo del torneo (ES / EN)
 - [ ] Logo del torneo en alta resolución (SVG o PNG con fondo transparente)
 - [ ] Imágenes del banner principal (3 a 5, apaisadas, mínimo 1920 px de ancho)
-- [ ] Los dos CTA del banner: qué texto y a dónde llevan
+- [x] Los dos CTA del banner — se sacaron del hero por ahora (2026-08-31).
 - [ ] Texto de bienvenida de la home
-- [ ] Texto "La unión de Flechar con la Liga 3D Metropolitana"
+- [x] Texto "La unión de Flechar con el CAI" — cargado (2026-08-31).
 - [ ] Texto resumido sobre la IFAA
 - [ ] Logos de IFAA, TAFISA y Zona Vital en alta resolución + a qué sitio enlaza cada uno
 - [ ] Lista final de partners y auspiciantes

@@ -22,7 +22,7 @@
     "columnaSede": "Venue and dates",
     "sede": "Panda Troupe, Olivera, Buenos Aires, Argentina",
     "fechas": "December 5th to 8th, 2026",
-    "organizadores": "Organized by: Flechar + Liga 3D Metropolitana",
+    "organizadores": "Organized by: Flechar + CAI",
     "avalan": "Endorsed by: IFAA, TAFISA, Zona Vital",
     "copyright": "LABHC. All rights reserved."
   },
@@ -68,9 +68,9 @@
   },
   "acerca": {
     "bloque1": {
-      "titulo": "The union of Flechar and Liga 3D Metropolitana",
+      "titulo": "The union of Flechar and CAI",
       "parrafos": [
-        "Liga 3D Metropolitana and Club Flechar were born from the same place: a passion for 3D archery and the drive to help it grow. Over four consecutive years, L3DM established itself by organizing the country's best 3D tournaments, bringing together a community of hundreds of archers of every level, awarding millions of pesos in prizes, and setting up Argentina's best 3D targets on the range.",
+        "Club Atlético Independiente and Club Flechar were born from the same place: a passion for 3D archery and the drive to help it grow. Over four consecutive years, CAI established itself by organizing the country's best 3D tournaments, bringing together a community of hundreds of archers of every level, awarding millions of pesos in prizes, and setting up Argentina's best 3D targets on the range.",
         "Flechar, an archery school with more than two decades of experience, brings the pillar that any top-level competition needs: technical knowledge. Its IFAA international instructor certification and its experience training archers add the sporting rigor, teaching, and command of the rulebook that make the difference.",
         "Joining these two forces wasn't a coincidence — it was the natural conclusion of two institutions that share the same vision: that Argentine 3D archery deserves to stand alongside the best in the world.",
         "That union gave rise to the most ambitious challenge the community has ever taken on: organizing, for the first time in Argentina, the Latin American Bowhunter Championship. This isn't just a tournament — it's the most important 3D event in Argentine history: a chance to put the country on the continental map of the discipline, and to show, both at home and abroad, everything we're capable of building when we work together.",
@@ -174,7 +174,7 @@
       "inscripcion": "Archer registration",
       "inscripcionAyuda": "Through {fecha}. After that, USD {precio}.",
       "banquete": "Banquet",
-      "escudo": "Style patch"
+      "equipoEstilo": "Team entry by style (groups of 3 of the same style)"
     },
     "formasDePago": {
       "titulo": "Payment methods",

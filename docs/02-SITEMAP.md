@@ -87,7 +87,7 @@ Notas de implementación:
 
 Dos bloques de texto, cada uno con su imagen o logo:
 
-1. **La unión de Flechar con la Liga 3D Metropolitana** — *texto a definir*.
+1. **La unión de Flechar con el CAI** — texto cargado (2026-08-31).
 2. **Qué es la IFAA** — reseña resumida, *texto a definir*.
 
 Sugerencia: agregar un tercer bloque corto con los organizadores y sus roles,

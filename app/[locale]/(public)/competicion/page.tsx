@@ -3,7 +3,7 @@ import { ProgramaCompeticion } from "@/components/publico/programa-competicion";
 import {
   FECHA_CORTE_INSCRIPCION_TEXTO,
   PRECIO_BANQUETE_USD,
-  PRECIO_ESCUDO_USD,
+  PRECIO_EQUIPO_ESTILO_USD,
   PRECIO_INSCRIPCION_TARDIA_USD,
   PRECIO_INSCRIPCION_TEMPRANA_USD,
 } from "@/lib/precios";
@@ -115,8 +115,8 @@ export default function PaginaCompeticion() {
             <dd className="font-display text-lg text-primario">USD {PRECIO_BANQUETE_USD}</dd>
           </div>
           <div className="flex items-center justify-between px-4 py-3">
-            <dt className="text-texto/80">{tPrecios("escudo")}</dt>
-            <dd className="font-display text-lg text-primario">USD {PRECIO_ESCUDO_USD}</dd>
+            <dt className="text-texto/80">{tPrecios("equipoEstilo")}</dt>
+            <dd className="font-display text-lg text-primario">USD {PRECIO_EQUIPO_ESTILO_USD}</dd>
           </div>
         </dl>
       </section>

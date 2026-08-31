@@ -11,7 +11,10 @@ export const FECHA_CORTE_INSCRIPCION_TEXTO = "05/10/2026";
 const FECHA_CORTE_INSCRIPCION = new Date("2026-10-05T00:00:00-03:00");
 
 export const PRECIO_BANQUETE_USD = 35;
-export const PRECIO_ESCUDO_USD = 30;
+// Un equipo de 3 arqueros inscriptos en el mismo estilo puede anotarse a
+// competir contra otros equipos (ademas de la inscripcion individual de
+// cada integrante).
+export const PRECIO_EQUIPO_ESTILO_USD = 30;
 
 export function calcularPrecioInscripcion(fecha: Date = new Date()): number {
   return fecha < FECHA_CORTE_INSCRIPCION

@@ -22,7 +22,7 @@
     "columnaSede": "Sede y fechas",
     "sede": "Panda Troupe, Olivera, Buenos Aires, Argentina",
     "fechas": "5 al 8 de diciembre de 2026",
-    "organizadores": "Organizan: Flechar + Liga 3D Metropolitana",
+    "organizadores": "Organizan: Flechar + CAI",
     "avalan": "Avalan: IFAA, TAFISA, Zona Vital",
     "copyright": "LABHC. Todos los derechos reservados."
   },
@@ -68,9 +68,9 @@
   },
   "acerca": {
     "bloque1": {
-      "titulo": "La unión de Flechar con la Liga 3D Metropolitana",
+      "titulo": "La unión de Flechar con el CAI",
       "parrafos": [
-        "La Liga 3D Metropolitana y el Club Flechar nacieron del mismo lugar: la pasión por el tiro con arco 3D y las ganas de hacerlo crecer. En cuatro años consecutivos, la L3DM se consolidó organizando los mejores torneos de 3D del país, reuniendo una comunidad de cientos de arqueros de todos los niveles, entregando millones de pesos en premios y poniendo en cancha las mejores dianas 3D de la Argentina.",
+        "El Club Atlético Independiente y el Club Flechar nacieron del mismo lugar: la pasión por el tiro con arco 3D y las ganas de hacerlo crecer. En cuatro años consecutivos, CAI se consolidó organizando los mejores torneos de 3D del país, reuniendo una comunidad de cientos de arqueros de todos los niveles, entregando millones de pesos en premios y poniendo en cancha las mejores dianas 3D de la Argentina.",
         "Flechar, escuela de arquería con más de dos décadas de trayectoria, aporta el pilar que toda competencia de primer nivel necesita: el conocimiento técnico. Su instructorado internacional IFAA y su experiencia formando tiradores suman la rigurosidad deportiva, la enseñanza y el dominio del reglamento que hacen la diferencia.",
         "Unir estas dos fuerzas no fue casualidad, sino la conclusión natural de dos instituciones que comparten una misma visión: que la arquería 3D argentina merece estar a la altura de las mejores del mundo.",
         "De esa unión nace el desafío más ambicioso que se haya propuesto la comunidad: organizar, por primera vez en la Argentina, el Campeonato Latinoamericano de Bowhunter. No se trata solo de un torneo, sino del evento de 3D más importante de la historia argentina: una oportunidad de poner al país en el mapa continental de la disciplina y de demostrar, puertas adentro y puertas afuera, todo lo que somos capaces de construir cuando trabajamos juntos.",
@@ -174,7 +174,7 @@
       "inscripcion": "Inscripción de tirador",
       "inscripcionAyuda": "Hasta el {fecha}. Después, USD {precio}.",
       "banquete": "Banquete",
-      "escudo": "Escudo de estilo"
+      "equipoEstilo": "Inscripción de equipo por estilo (grupos de 3 del mismo estilo)"
     },
     "formasDePago": {
       "titulo": "Formas de pago",

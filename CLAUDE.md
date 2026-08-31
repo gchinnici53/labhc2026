@@ -14,7 +14,12 @@ IFAA.
 - **Dominio:** labhc2026.ar
 - **Fechas del torneo:** 5 al 8 de diciembre de 2026
 - **Sede:** Panda Troupe, Olivera, Provincia de Buenos Aires, Argentina
-- **Organizan:** Flechar + Liga 3D Metropolitana
+- **Organizan:** Flechar + CAI (Club Atlético Independiente; reemplazó a Liga
+  3D Metropolitana como co-organizador, 2026-08-31 — ver `docs/04-PENDIENTES.md`).
+  El comité organizador (bio en /acerca, bloque3) sigue mencionando a la Liga
+  3D Metropolitana para los referentes que vienen de ahí: son datos
+  biográficos de personas, no la marca del co-organizador, así que no se
+  tocaron sin confirmar con la organización.
 - **Avalan / partners:** IFAA, TAFISA, Zona Vital (se agregarán más)
 - **Proyecto hermano:** liga3d.appchinni.com (misma VPS, mismo stack)
 
@@ -251,7 +256,9 @@ respecto al Archer's Handbook (12 valores).
    solo listan los valores presentes entre los inscriptos (decisión
    confirmada 2026-08-31).
 4. Precios (actualizado 2026-08-31): inscripción USD 150 hasta el 05/10/2026,
-   USD 175 después; banquete USD 35; escudo de estilo USD 30. Viven como
+   USD 175 después; banquete USD 35; inscripción de equipo por estilo
+   (grupos de 3 arqueros del mismo estilo, además de lo que paga cada uno
+   individualmente) USD 30. Viven como
    constantes en `lib/precios.ts` (fuente única para `/competicion`, el
    formulario de inscripción y el cálculo del dashboard) — todavía no en
    `Configuracion`, así que un cambio de precio implica editar ese archivo y
