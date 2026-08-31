@@ -11,25 +11,41 @@ function Tarjeta({ titulo, valor }: { titulo: string; valor: string }) {
 }
 
 export default async function PaginaDashboard() {
-  const [totalArqueros, pagados, banquetesConfirmados, configs] = await Promise.all([
+  const [
+    totalArqueros,
+    pagados,
+    banquetesConfirmados,
+    configs,
+    sumaPagados,
+    sumaNoPagados,
+  ] = await Promise.all([
     prisma.arquero.count(),
     prisma.arquero.count({ where: { pagado: true } }),
     prisma.arquero.count({ where: { banquetePagado: true } }),
     prisma.configuracion.findMany({
-      where: { clave: { in: ["precio_inscripcion", "precio_banquete"] } },
+      where: { clave: { in: ["precio_banquete"] } },
+    }),
+    prisma.arquero.aggregate({
+      where: { pagado: true },
+      _sum: { montoInscripcion: true },
+    }),
+    prisma.arquero.aggregate({
+      where: { pagado: false },
+      _sum: { montoInscripcion: true },
     }),
   ]);
 
-  const precioInscripcion = Number(
-    configs.find((c) => c.clave === "precio_inscripcion")?.valor ?? 0
-  );
   const precioBanquete = Number(
     configs.find((c) => c.clave === "precio_banquete")?.valor ?? 0
   );
 
   const noPagados = totalArqueros - pagados;
-  const recaudadoInscripcion = pagados * precioInscripcion;
-  const faltaCobrarInscripcion = noPagados * precioInscripcion;
+  // La tarifa de inscripcion tiene tramos por fecha (ver lib/precios.ts), asi
+  // que se guarda por arquero al inscribirse (Arquero.montoInscripcion) en
+  // vez de multiplicar por un precio unico: cada quien puede deber o haber
+  // pagado una tarifa distinta segun cuando se anoto.
+  const recaudadoInscripcion = sumaPagados._sum.montoInscripcion ?? 0;
+  const faltaCobrarInscripcion = sumaNoPagados._sum.montoInscripcion ?? 0;
   const recaudadoBanquete = banquetesConfirmados * precioBanquete;
 
   const formatoUSD = (monto: number) =>

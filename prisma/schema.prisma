@@ -68,32 +68,33 @@ model Usuario {
 }
 
 model Arquero {
-  id              String   @id @default(cuid())
-  numeroRegistro  String?  @unique // LABHC-0001, asignado automaticamente al inscribirse
-  nombre          String
-  apellido        String
-  genero          Genero
-  fechaNacimiento DateTime @db.Date
-  pais            String // ISO-3166 alpha-2
-  federacion      String // texto libre
-  division        Division
-  estilo          Estilo
-  email           String
-  telefono        String?
-  banquete        Boolean  @default(false) // quiere banquete (USD 40)
-  banquetePagado  Boolean  @default(false) // confirmacion de pago del banquete
-  pagado          Boolean  @default(false) // confirmacion de pago de la inscripcion (USD 150)
-  comprobanteUrl  String?
-  notas           String?
-  publicado       Boolean  @default(true) // aparece en /registrados
-  creadoEn        DateTime @default(now())
-  actualizadoEn   DateTime @updatedAt
-  grupos          ArqueroGrupo[]
-  resultados      Resultado[]
+  id               String         @id @default(cuid())
+  numeroRegistro   String?        @unique // LABHC-0001, asignado automaticamente al inscribirse
+  nombre           String
+  apellido         String
+  genero           Genero
+  fechaNacimiento  DateTime       @db.Date
+  pais             String // ISO-3166 alpha-2
+  federacion       String // texto libre
+  division         Division
+  estilo           Estilo
+  email            String
+  telefono         String?
+  banquete         Boolean        @default(false) // quiere banquete (ver lib/precios.ts)
+  banquetePagado   Boolean        @default(false) // confirmacion de pago del banquete
+  pagado           Boolean        @default(false) // confirmacion de pago de la inscripcion
+  montoInscripcion Int? // tarifa de inscripcion (USD) vigente al momento de inscribirse, ver lib/precios.ts
+  comprobanteUrl   String?
+  notas            String?
+  publicado        Boolean        @default(true) // aparece en /registrados
+  creadoEn         DateTime       @default(now())
+  actualizadoEn    DateTime       @updatedAt
+  grupos           ArqueroGrupo[]
+  resultados       Resultado[]
 }
 
 model Grupo {
-  id            String @id @default(cuid())
+  id            String         @id @default(cuid())
   nombre        String // "Grupo 1"
   ronda         Ronda
   blancoInicial Int? // estaca de largada

@@ -476,7 +476,7 @@
       "genero": "Género",
       "division": "Categoría",
       "estilo": "Estilo",
-      "banquete": "¿Asistís al banquete? (USD 35)",
+      "banquete": "¿Asistís al banquete? (USD {precio})",
       "aceptaReglamento": "Leí y acepto el reglamento del torneo y el uso de mis datos para la organización."
     },
     "federacionOpciones": {

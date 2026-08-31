@@ -1,12 +1,12 @@
 import { useTranslations } from "next-intl";
 import { ProgramaCompeticion } from "@/components/publico/programa-competicion";
-
-// Precios temporales: pasan a la tabla Configuracion en la Etapa 4/5.
-const PRECIO_INSCRIPCION_TEMPRANA_USD = 150;
-const PRECIO_INSCRIPCION_TARDIA_USD = 175;
-const FECHA_CORTE_INSCRIPCION = "05/10/2026";
-const PRECIO_BANQUETE_USD = 35;
-const PRECIO_ESCUDO_USD = 30;
+import {
+  FECHA_CORTE_INSCRIPCION_TEXTO,
+  PRECIO_BANQUETE_USD,
+  PRECIO_ESCUDO_USD,
+  PRECIO_INSCRIPCION_TARDIA_USD,
+  PRECIO_INSCRIPCION_TEMPRANA_USD,
+} from "@/lib/precios";
 
 export default function PaginaCompeticion() {
   const tPagina = useTranslations("paginas.competicion");
@@ -105,7 +105,7 @@ export default function PaginaCompeticion() {
             </div>
             <p className="mt-1 text-xs text-texto/60">
               {tPrecios("inscripcionAyuda", {
-                fecha: FECHA_CORTE_INSCRIPCION,
+                fecha: FECHA_CORTE_INSCRIPCION_TEXTO,
                 precio: PRECIO_INSCRIPCION_TARDIA_USD,
               })}
             </p>

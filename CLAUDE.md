@@ -149,9 +149,10 @@ model Arquero {
   estilo          Estilo
   email           String
   telefono        String?
-  banquete        Boolean  @default(false)    // quiere banquete (USD 40)
+  banquete        Boolean  @default(false)    // quiere banquete (ver lib/precios.ts)
   banquetePagado  Boolean  @default(false)    // confirmacion de pago del banquete
-  pagado          Boolean  @default(false)    // confirmacion de pago de la inscripcion (USD 150)
+  pagado          Boolean  @default(false)    // confirmacion de pago de la inscripcion
+  montoInscripcion Int?                       // tarifa (USD) vigente al inscribirse, ver lib/precios.ts
   comprobanteUrl  String?
   notas           String?
   publicado       Boolean  @default(true)     // aparece en /registrados
@@ -250,12 +251,16 @@ respecto al Archer's Handbook (12 valores).
    solo listan los valores presentes entre los inscriptos (decisión
    confirmada 2026-08-31).
 4. Precios (actualizado 2026-08-31): inscripción USD 150 hasta el 05/10/2026,
-   USD 175 después; banquete USD 35; escudo de estilo USD 30. `Configuracion`
-   solo guarda `precio_inscripcion` y `precio_banquete` como valores planos
-   (sin tramos por fecha todavía — los usa el dashboard de `/admin` para
-   calcular lo recaudado) y `/competicion` los muestra hardcodeados en
-   `page.tsx`; ninguna de las dos fuentes es la autoridad real, así que un
-   cambio de precio hay que aplicarlo en ambos lados a mano.
+   USD 175 después; banquete USD 35; escudo de estilo USD 30. Viven como
+   constantes en `lib/precios.ts` (fuente única para `/competicion`, el
+   formulario de inscripción y el cálculo del dashboard) — todavía no en
+   `Configuracion`, así que un cambio de precio implica editar ese archivo y
+   redeployar. Como la inscripción tiene tramos por fecha, cada `Arquero`
+   guarda la tarifa que le tocó en `montoInscripcion` (calculada una sola vez
+   al inscribirse); el dashboard de `/admin` suma esa columna en vez de
+   multiplicar por un precio fijo. `Configuracion.precio_inscripcion` quedó
+   sin uso por el mismo motivo; `Configuracion.precio_banquete` sigue siendo
+   la fuente que usa el dashboard para el banquete (no tiene tramos).
 5. Todo lo marcado como "a definir" en `docs/04-PENDIENTES.md` se implementa
    con un placeholder visible y editable desde el panel. Nunca inventar textos,
    nombres, precios ni datos de contacto.

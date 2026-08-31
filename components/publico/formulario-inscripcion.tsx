@@ -10,6 +10,7 @@ import {
   ESTILOS_ORDENADOS,
   FEDERACIONES,
 } from "@/lib/validaciones/inscripcion";
+import { PRECIO_BANQUETE_USD } from "@/lib/precios";
 
 const CLASE_INPUT =
   "mt-1 w-full rounded-md border border-primario/20 px-3 py-2 text-sm";
@@ -219,7 +220,7 @@ export function FormularioInscripcion() {
 
       <label className="mt-6 flex items-center gap-2 text-sm text-texto/80">
         <input type="checkbox" name="banquete" />
-        {t("campos.banquete")}
+        {t("campos.banquete", { precio: PRECIO_BANQUETE_USD })}
       </label>
 
       <label className="mt-4 flex items-start gap-2 text-sm text-texto/80">

@@ -476,7 +476,7 @@
       "genero": "Gender",
       "division": "Category",
       "estilo": "Style",
-      "banquete": "Attending the banquet? (USD 35)",
+      "banquete": "Attending the banquet? (USD {precio})",
       "aceptaReglamento": "I have read and accept the tournament rules and the use of my data for the organization."
     },
     "federacionOpciones": {

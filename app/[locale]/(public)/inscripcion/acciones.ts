@@ -3,6 +3,7 @@
 import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { esquemaInscripcion, FEDERACIONES } from "@/lib/validaciones/inscripcion";
+import { calcularPrecioInscripcion } from "@/lib/precios";
 
 export type ResultadoInscripcion =
   | { ok: true }
@@ -96,6 +97,7 @@ export async function inscribirArquero(
         division: datos.data.division,
         estilo: datos.data.estilo,
         banquete: datos.data.banquete,
+        montoInscripcion: calcularPrecioInscripcion(),
       },
     });
   });

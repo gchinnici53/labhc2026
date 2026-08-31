@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
+import { PRECIO_INSCRIPCION_TEMPRANA_USD } from "../lib/precios";
 
 const prisma = new PrismaClient();
 
@@ -99,6 +100,7 @@ async function seedArquerosDePrueba() {
       pagado: true,
       banquete: true,
       banquetePagado: true,
+      montoInscripcion: PRECIO_INSCRIPCION_TEMPRANA_USD,
     },
     {
       numeroRegistro: "LABHC-0002",
@@ -114,6 +116,7 @@ async function seedArquerosDePrueba() {
       pagado: true,
       banquete: true,
       banquetePagado: false,
+      montoInscripcion: PRECIO_INSCRIPCION_TEMPRANA_USD,
     },
     {
       numeroRegistro: "LABHC-0003",
@@ -129,6 +132,7 @@ async function seedArquerosDePrueba() {
       pagado: false,
       banquete: false,
       banquetePagado: false,
+      montoInscripcion: PRECIO_INSCRIPCION_TEMPRANA_USD,
     },
     {
       numeroRegistro: null,
@@ -144,6 +148,7 @@ async function seedArquerosDePrueba() {
       pagado: false,
       banquete: true,
       banquetePagado: false,
+      montoInscripcion: PRECIO_INSCRIPCION_TEMPRANA_USD,
     },
   ];
 
