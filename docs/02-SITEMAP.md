@@ -192,11 +192,15 @@ Etapa 7, ya con datos:
 
 ## 5. Registrados
 
-Listado en vivo de inscriptos. Buscador por nombre o país; filtros por división,
-estilo y país. Contador arriba: "N arqueros inscriptos de N países".
+Listado en vivo de inscriptos (decisión confirmada 2026-08-31). Buscador por
+nombre, apellido o número de registro; filtros desplegables de federación,
+género, estilo y división, cada uno mostrando solo los valores que existen
+entre los inscriptos actuales (no la lista completa de opciones posibles).
 
-Columnas: nº de registro, nombre y apellido, país, federación, división, estilo,
-estado de pago.
+Columnas: nº de registro, apellido, nombre, federación, género, estilo,
+división (código calculado, ej. "AMLB") y estado de pago ("Sí"/"No"). Es de
+solo lectura: nada se edita desde acá. Nunca email, teléfono ni fecha de
+nacimiento.
 
 **Nunca** mostrar email, teléfono ni fecha de nacimiento.
 

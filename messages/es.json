@@ -517,5 +517,29 @@
       "titulo": "¡Gracias por inscribirte!",
       "texto": "Registramos tu inscripción como pendiente de pago. Pronto vas a recibir por email las instrucciones para completarlo."
     }
+  },
+  "registrados": {
+    "buscador": "Buscar por nombre, apellido o N° de registro",
+    "filtros": {
+      "federacion": "Federación",
+      "genero": "Género",
+      "estilo": "Estilo",
+      "division": "División",
+      "todos": "Todos"
+    },
+    "columnas": {
+      "numeroRegistro": "N° Registro",
+      "apellido": "Apellido",
+      "nombre": "Nombre",
+      "federacion": "Federación",
+      "genero": "Género",
+      "estilo": "Estilo",
+      "division": "División",
+      "confirmado": "Confirmado"
+    },
+    "si": "Sí",
+    "no": "No",
+    "sinResultados": "No se encontraron arqueros con esos filtros.",
+    "sinInscriptos": "Todavía no hay arqueros inscriptos."
   }
 }

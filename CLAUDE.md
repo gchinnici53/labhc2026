@@ -242,9 +242,13 @@ respecto al Archer's Handbook (12 valores).
    cero muestra "El torneo comenzó", nunca números negativos.
 2. **Grupos y Resultados** arranca como "En construcción", pero la ruta, el
    modelo y el panel de carga ya deben existir desde la etapa 4.
-3. **Registrados** muestra solo: número de registro, nombre y apellido, país,
-   división, estilo y estado de pago. Nunca email, teléfono ni fecha de
-   nacimiento.
+3. **Registrados** muestra solo: número de registro, apellido y nombre,
+   federación, género, estilo, división (el código calculado, ej. "AMLB") y
+   estado de pago ("Sí"/"No", sin poder editarlo). Nunca email, teléfono ni
+   fecha de nacimiento. Tiene buscador (nombre, apellido o número de
+   registro) y filtros desplegables de federación/género/estilo/división que
+   solo listan los valores presentes entre los inscriptos (decisión
+   confirmada 2026-08-31).
 4. Precios: inscripción USD 150, banquete USD 40. Van en `Configuracion`, no
    hardcodeados.
 5. Todo lo marcado como "a definir" en `docs/04-PENDIENTES.md` se implementa

@@ -517,5 +517,29 @@
       "titulo": "Thanks for registering!",
       "texto": "We've recorded your registration as pending payment. You'll soon receive payment instructions by email."
     }
+  },
+  "registrados": {
+    "buscador": "Search by name, last name, or registration No.",
+    "filtros": {
+      "federacion": "Federation",
+      "genero": "Gender",
+      "estilo": "Style",
+      "division": "Division",
+      "todos": "All"
+    },
+    "columnas": {
+      "numeroRegistro": "Reg. No.",
+      "apellido": "Last name",
+      "nombre": "First name",
+      "federacion": "Federation",
+      "genero": "Gender",
+      "estilo": "Style",
+      "division": "Division",
+      "confirmado": "Confirmed"
+    },
+    "si": "Yes",
+    "no": "No",
+    "sinResultados": "No archers match those filters.",
+    "sinInscriptos": "There are no registered archers yet."
   }
 }
