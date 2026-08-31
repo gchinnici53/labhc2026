@@ -34,16 +34,19 @@ export const ESTILOS_ORDENADOS = [
 const INICIO_TORNEO = new Date("2026-12-05T08:00:00-03:00");
 
 // Cada opcion es un pais/federacion: la lista la confirmo la organizacion.
+// El "valor" es el identificador estable que se guarda en la base (no
+// cambiar sin migrar datos); la etiqueta visible sale de la traduccion
+// inscripcion.federacionOpciones.<valor> en messages/es.json y en.json.
 export const FEDERACIONES = [
-  { valor: "AATA", etiqueta: "AATA - Argentina", pais: "AR" },
-  { valor: "AFB", etiqueta: "AFB - Brasil", pais: "BR" },
-  { valor: "Chile", etiqueta: "Chile", pais: "CL" },
-  { valor: "Colombia", etiqueta: "Colombia", pais: "CO" },
-  { valor: "Guyana", etiqueta: "Guyana", pais: "GY" },
-  { valor: "México", etiqueta: "México", pais: "MX" },
-  { valor: "Trinidad and Tobago", etiqueta: "Trinidad and Tobago", pais: "TT" },
-  { valor: "FUTARCO", etiqueta: "FUTARCO - Uruguay", pais: "UY" },
-  { valor: "Islas Vírgenes", etiqueta: "Islas Vírgenes", pais: "VG" },
+  { valor: "AATA", pais: "AR" },
+  { valor: "AFB", pais: "BR" },
+  { valor: "Chile", pais: "CL" },
+  { valor: "Colombia", pais: "CO" },
+  { valor: "Guyana", pais: "GY" },
+  { valor: "México", pais: "MX" },
+  { valor: "Trinidad and Tobago", pais: "TT" },
+  { valor: "FUTARCO", pais: "UY" },
+  { valor: "Islas Vírgenes", pais: "VG" },
 ] as const;
 
 type ValorFederacion = (typeof FEDERACIONES)[number]["valor"];

@@ -478,6 +478,17 @@
       "banquete": "Attending the banquet? (USD 40)",
       "aceptaReglamento": "I have read and accept the tournament rules and the use of my data for the organization."
     },
+    "federacionOpciones": {
+      "AATA": "AATA - Argentina",
+      "AFB": "AFB - Brazil",
+      "Chile": "Chile",
+      "Colombia": "Colombia",
+      "Guyana": "Guyana",
+      "México": "Mexico",
+      "Trinidad and Tobago": "Trinidad and Tobago",
+      "FUTARCO": "FUTARCO - Uruguay",
+      "Islas Vírgenes": "Virgin Islands"
+    },
     "divisionAyuda": "Based on your date of birth, as of December 5th, 2026 you belong to: {division}",
     "generoOpciones": {
       "MASCULINO": "Male",

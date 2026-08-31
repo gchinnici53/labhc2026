@@ -478,6 +478,17 @@
       "banquete": "¿Asistís al banquete? (USD 40)",
       "aceptaReglamento": "Leí y acepto el reglamento del torneo y el uso de mis datos para la organización."
     },
+    "federacionOpciones": {
+      "AATA": "AATA - Argentina",
+      "AFB": "AFB - Brasil",
+      "Chile": "Chile",
+      "Colombia": "Colombia",
+      "Guyana": "Guyana",
+      "México": "México",
+      "Trinidad and Tobago": "Trinidad y Tobago",
+      "FUTARCO": "FUTARCO - Uruguay",
+      "Islas Vírgenes": "Islas Vírgenes"
+    },
     "divisionAyuda": "Según tu fecha de nacimiento, al 5 de diciembre de 2026 te corresponde: {division}",
     "generoOpciones": {
       "MASCULINO": "Masculino",

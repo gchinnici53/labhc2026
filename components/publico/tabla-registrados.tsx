@@ -3,6 +3,9 @@
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import type { Estilo, Genero } from "@prisma/client";
+import { FEDERACIONES } from "@/lib/validaciones/inscripcion";
+
+const VALORES_FEDERACION_CONOCIDOS = new Set(FEDERACIONES.map((f) => f.valor as string));
 
 type FilaRegistrado = {
   id: string;
@@ -26,6 +29,16 @@ function valoresUnicos<T extends string>(valores: T[]): T[] {
 export function TablaRegistrados({ filas }: { filas: FilaRegistrado[] }) {
   const t = useTranslations("registrados");
   const tInscripcion = useTranslations("inscripcion");
+
+  // La federacion es texto libre (ver prisma/schema.prisma): solo se traduce
+  // cuando coincide con una de las opciones fijas del formulario publico
+  // (lib/validaciones/inscripcion.ts); cualquier otro valor cargado a mano
+  // se muestra tal cual se guardo.
+  function etiquetaFederacion(valor: string): string {
+    return VALORES_FEDERACION_CONOCIDOS.has(valor)
+      ? tInscripcion(`federacionOpciones.${valor}`)
+      : valor;
+  }
 
   const [busqueda, setBusqueda] = useState("");
   const [federacion, setFederacion] = useState("");
@@ -77,7 +90,7 @@ export function TablaRegistrados({ filas }: { filas: FilaRegistrado[] }) {
             <option value="">{t("filtros.federacion")}: {t("filtros.todos")}</option>
             {federaciones.map((valor) => (
               <option key={valor} value={valor}>
-                {valor}
+                {etiquetaFederacion(valor)}
               </option>
             ))}
           </select>
@@ -159,7 +172,7 @@ export function TablaRegistrados({ filas }: { filas: FilaRegistrado[] }) {
                 <td className="px-3 py-2 text-texto/80">{fila.numeroRegistro ?? "—"}</td>
                 <td className="px-3 py-2 text-texto/80">{fila.apellido}</td>
                 <td className="px-3 py-2 text-texto/80">{fila.nombre}</td>
-                <td className="px-3 py-2 text-texto/80">{fila.federacion}</td>
+                <td className="px-3 py-2 text-texto/80">{etiquetaFederacion(fila.federacion)}</td>
                 <td className="px-3 py-2 text-texto/80">
                   {tInscripcion(`generoOpciones.${fila.genero}`)}
                 </td>

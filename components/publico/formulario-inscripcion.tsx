@@ -122,7 +122,7 @@ export function FormularioInscripcion() {
             </option>
             {FEDERACIONES.map((federacion) => (
               <option key={federacion.valor} value={federacion.valor}>
-                {federacion.etiqueta}
+                {t(`federacionOpciones.${federacion.valor}`)}
               </option>
             ))}
           </select>
