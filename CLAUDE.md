@@ -125,7 +125,7 @@ que crea un `Arquero` en estado pendiente.
 ```prisma
 enum Rol          { ADMIN CARGA INVITADO }
 enum Genero       { MASCULINO FEMENINO }
-enum Division     { CUB JUNIOR ADULT VETERAN SENIOR } // CUB 8-12, JUNIOR 13-17, ADULT 18-54, VETERAN 55-64, SENIOR 65+
+enum Division     { CUB JUNIOR YOUNG_ADULT ADULT VETERAN SENIOR } // CUB 8-12, JUNIOR 13-16, YOUNG_ADULT 17-18, ADULT 19-54, VETERAN 55-64, SENIOR 65+
 enum Estilo       { BB_R BB_C FS_R FS_C FU BH_R BH_C BL BU LB HB TR } // IFAA
 enum Ronda        { ANIMAL STANDARD HUNTING }
 enum NivelSponsor { PRINCIPAL PARTNER APOYO }
@@ -235,9 +235,12 @@ transacción (`Configuracion.ultimo_numero_registro`, incremento atómico
 con `INSERT ... ON CONFLICT`) para que dos inscripciones simultáneas nunca
 reciban el mismo número.
 
-**Divisiones y estilos IFAA:** confirmado por la organización (2026-08-30, ver
-`docs/04-PENDIENTES.md`). 5 divisiones por edad, sin Young Adult (Cub 8-12,
-Junior 13-17, Adult 18-54, Veteran 55-64, Senior 65+). Estilo sin cambios
+**Divisiones y estilos IFAA:** confirmado por la organización (2026-08-30,
+corregido 2026-09-01 — ver `docs/04-PENDIENTES.md`). 6 divisiones por edad:
+Cub 8-12, Junior 13-16, Joven Adulto (`YOUNG_ADULT`) 17-18, Adult 19-54,
+Veteran 55-64, Senior 65+. La organización había pedido sacar Young Adult el
+2026-08-30 y lo volvió a pedir el 2026-09-01 con estos límites de edad
+corregidos (Junior y Adult también cambiaron su rango). Estilo sin cambios
 respecto al Archer's Handbook (12 valores).
 
 ---

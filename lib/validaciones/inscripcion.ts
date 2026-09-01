@@ -10,6 +10,7 @@ export const GENEROS = ["MASCULINO", "FEMENINO"] as const satisfies readonly Gen
 export const DIVISIONES_ORDENADAS = [
   "CUB",
   "JUNIOR",
+  "YOUNG_ADULT",
   "ADULT",
   "VETERAN",
   "SENIOR",
@@ -66,12 +67,14 @@ export function calcularEdadAlTorneo(fechaNacimiento: Date): number {
   return edad;
 }
 
-// Cub 8-12, Junior 13-17, Adult 18-54, Veteran 55-64, Senior 65+
-// (confirmado por la organizacion, ver docs/04-PENDIENTES.md).
+// Cub 8-12, Junior 13-16, Joven Adulto 17-18, Adult 19-54, Veteran 55-64,
+// Senior 65+ (correccion de la organizacion, 2026-09-01: antes Junior
+// llegaba a 17 y Adult empezaba en 18, sin categoria intermedia).
 export function calcularDivisionPorEdad(fechaNacimiento: Date): Division {
   const edad = calcularEdadAlTorneo(fechaNacimiento);
   if (edad <= 12) return "CUB";
-  if (edad <= 17) return "JUNIOR";
+  if (edad <= 16) return "JUNIOR";
+  if (edad <= 18) return "YOUNG_ADULT";
   if (edad <= 54) return "ADULT";
   if (edad <= 64) return "VETERAN";
   return "SENIOR";

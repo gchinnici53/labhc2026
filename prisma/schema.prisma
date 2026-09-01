@@ -20,9 +20,13 @@ enum Genero {
 
 // Categorias por edad del torneo (confirmadas por la organizacion):
 // CUB 8-12, JUNIOR 13-17, ADULT 18-54, VETERAN 55-64, SENIOR 65+
+// CUB 8-12, JUNIOR 13-16, YOUNG_ADULT 17-18, ADULT 19-54, VETERAN 55-64,
+// SENIOR 65+ (correccion de la organizacion, 2026-09-01: ver
+// lib/validaciones/inscripcion.ts para el calculo por edad).
 enum Division {
   CUB
   JUNIOR
+  YOUNG_ADULT
   ADULT
   VETERAN
   SENIOR

@@ -359,8 +359,9 @@
         "intro": "Age is taken as of the first day of the tournament. These are the tournament's divisions:",
         "items": [
           "Cub — 8 to 12 (shoot with a reduced range of styles and accompanied by a non-shooting responsible adult).",
-          "Junior — 13 to 17.",
-          "Adult — 18 to 54.",
+          "Junior — 13 to 16.",
+          "Young Adult — 17 to 18.",
+          "Adult — 19 to 54.",
           "Veteran — 55 to 64.",
           "Senior — 65 and up."
         ]
@@ -497,8 +498,9 @@
     },
     "divisionOpciones": {
       "CUB": "Cub (8 to 12)",
-      "JUNIOR": "Junior (13 to 17)",
-      "ADULT": "Adult (18 to 54)",
+      "JUNIOR": "Junior (13 to 16)",
+      "YOUNG_ADULT": "Young Adult (17 to 18)",
+      "ADULT": "Adult (19 to 54)",
       "VETERAN": "Veteran (55 to 64)",
       "SENIOR": "Senior (65 and up)"
     },

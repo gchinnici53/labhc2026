@@ -10,11 +10,13 @@ export const ETIQUETAS_GENERO: Record<Genero, string> = {
   FEMENINO: "Femenino",
 };
 
-// Categorias confirmadas por la organizacion: CUB 8-12, JUNIOR 13-17,
-// ADULT 18-54, VETERAN 55-64, SENIOR 65+
+// Categorias confirmadas por la organizacion (correccion 2026-09-01):
+// CUB 8-12, JUNIOR 13-16, YOUNG_ADULT 17-18, ADULT 19-54, VETERAN 55-64,
+// SENIOR 65+
 export const ETIQUETAS_DIVISION: Record<Division, string> = {
   CUB: "Cub",
   JUNIOR: "Junior",
+  YOUNG_ADULT: "Joven Adulto",
   ADULT: "Adulto",
   VETERAN: "Veterano",
   SENIOR: "Senior",
@@ -39,6 +41,7 @@ export const ETIQUETAS_ESTILO: Record<Estilo, string> = {
 const INICIAL_DIVISION: Record<Division, string> = {
   CUB: "C",
   JUNIOR: "J",
+  YOUNG_ADULT: "Y",
   ADULT: "A",
   VETERAN: "V",
   SENIOR: "S",

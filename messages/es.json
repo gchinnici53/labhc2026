@@ -359,8 +359,9 @@
         "intro": "La edad se toma al primer día del torneo. Estas son las divisiones del torneo:",
         "items": [
           "Cub — de 8 a 12 años (tiran con un rango de estilos reducido y acompañados por un adulto responsable no tirador).",
-          "Junior — de 13 a 17 años.",
-          "Adulto — de 18 a 54 años.",
+          "Junior — de 13 a 16 años.",
+          "Joven Adulto — de 17 a 18 años.",
+          "Adulto — de 19 a 54 años.",
           "Veterano — de 55 a 64 años.",
           "Senior — 65 años en adelante."
         ]
@@ -497,8 +498,9 @@
     },
     "divisionOpciones": {
       "CUB": "Cub (8 a 12 años)",
-      "JUNIOR": "Junior (13 a 17 años)",
-      "ADULT": "Adulto (18 a 54 años)",
+      "JUNIOR": "Junior (13 a 16 años)",
+      "YOUNG_ADULT": "Joven Adulto (17 a 18 años)",
+      "ADULT": "Adulto (19 a 54 años)",
       "VETERAN": "Veterano (55 a 64 años)",
       "SENIOR": "Senior (65 años en adelante)"
     },
