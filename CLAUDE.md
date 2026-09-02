@@ -274,6 +274,14 @@ respecto al Archer's Handbook (12 valores).
 5. Todo lo marcado como "a definir" en `docs/04-PENDIENTES.md` se implementa
    con un placeholder visible y editable desde el panel. Nunca inventar textos,
    nombres, precios ni datos de contacto.
+6. **Gate de mantenimiento** (agregado 2026-09-02): con `MODO_MANTENIMIENTO=true`
+   en el `.env`, `middleware.ts` (`resolverGateMantenimiento`) muestra
+   `/en-construccion` a cualquiera que no tenga la cookie `labhc_acceso`, en
+   todo el sitio público (no afecta `/admin`, que sigue con su propio login).
+   Visitar `https://<dominio>/?acceso=<MANTENIMIENTO_TOKEN>` una vez desbloquea
+   el sitio en ese navegador por 90 días. Para activar/desactivar hay que
+   editar el `.env` de la VPS y hacer `pm2 restart` — no hay switch en el
+   panel admin todavía.
 
 ---
 
